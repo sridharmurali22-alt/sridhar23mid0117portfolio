@@ -1,0 +1,2886 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>SRIDHAR | NLP Learning Portfolio</title>
+<meta name="description" content="Sridhar's NLP learning portfolio: DeepShield AI, Jupyter notebooks, assignments, 10 earned stars, WhatsApp study topics and research case studies."/>
+<style id="bundled-tailwind">
+/*! tailwindcss v4.1.10 | MIT License | https://tailwindcss.com */
+@layer properties;
+@layer theme, base, components, utilities;
+@layer theme {
+  :root, :host {
+    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono: 'JetBrains Mono', monospace;
+    --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-orange-200: oklch(90.1% 0.076 70.697);
+    --color-orange-300: oklch(83.7% 0.128 66.29);
+    --color-orange-400: oklch(75% 0.183 55.934);
+    --color-orange-500: oklch(70.5% 0.213 47.604);
+    --color-amber-100: oklch(96.2% 0.059 95.617);
+    --color-amber-200: oklch(92.4% 0.12 95.746);
+    --color-amber-300: oklch(87.9% 0.169 91.605);
+    --color-amber-400: oklch(82.8% 0.189 84.429);
+    --color-lime-300: oklch(89.7% 0.196 126.665);
+    --color-lime-400: oklch(84.1% 0.238 128.85);
+    --color-green-300: oklch(87.1% 0.15 154.449);
+    --color-green-400: oklch(79.2% 0.209 151.711);
+    --color-green-500: oklch(72.3% 0.219 149.579);
+    --color-cyan-100: oklch(95.6% 0.045 203.388);
+    --color-cyan-200: oklch(91.7% 0.08 205.041);
+    --color-cyan-300: oklch(86.5% 0.127 207.078);
+    --color-cyan-400: oklch(78.9% 0.154 211.53);
+    --color-cyan-500: oklch(71.5% 0.143 215.221);
+    --color-cyan-700: oklch(52% 0.105 223.128);
+    --color-indigo-700: oklch(45.7% 0.24 277.023);
+    --color-indigo-800: oklch(39.8% 0.195 277.366);
+    --color-violet-100: oklch(94.3% 0.029 294.588);
+    --color-violet-300: oklch(81.1% 0.111 293.571);
+    --color-violet-400: oklch(70.2% 0.183 293.541);
+    --color-violet-500: oklch(60.6% 0.25 292.717);
+    --color-violet-600: oklch(54.1% 0.281 293.009);
+    --color-violet-700: oklch(49.1% 0.27 292.581);
+    --color-pink-300: oklch(82.3% 0.12 346.018);
+    --color-pink-400: oklch(71.8% 0.202 349.761);
+    --color-pink-500: oklch(65.6% 0.241 354.308);
+    --color-pink-600: oklch(59.2% 0.249 0.584);
+    --color-pink-700: oklch(52.5% 0.223 3.958);
+    --color-slate-200: oklch(92.9% 0.013 255.508);
+    --color-slate-300: oklch(86.9% 0.022 252.894);
+    --color-slate-400: oklch(70.4% 0.04 256.788);
+    --color-slate-500: oklch(55.4% 0.046 257.417);
+    --color-slate-600: oklch(44.6% 0.043 257.281);
+    --color-gray-100: oklch(96.7% 0.003 264.542);
+    --color-gray-200: oklch(92.8% 0.006 264.531);
+    --color-gray-800: oklch(27.8% 0.033 256.848);
+    --color-gray-900: oklch(21% 0.034 264.665);
+    --color-black: #000;
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --container-xs: 20rem;
+    --container-lg: 32rem;
+    --container-xl: 36rem;
+    --container-2xl: 42rem;
+    --container-3xl: 48rem;
+    --container-4xl: 56rem;
+    --container-5xl: 64rem;
+    --container-7xl: 80rem;
+    --text-xs: 0.75rem;
+    --text-xs--line-height: calc(1 / 0.75);
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
+    --text-6xl: 3.75rem;
+    --text-6xl--line-height: 1;
+    --text-7xl: 4.5rem;
+    --text-7xl--line-height: 1;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+    --tracking-tight: -0.025em;
+    --tracking-wide: 0.025em;
+    --tracking-wider: 0.05em;
+    --tracking-widest: 0.1em;
+    --leading-tight: 1.25;
+    --leading-snug: 1.375;
+    --leading-relaxed: 1.625;
+    --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
+    --radius-2xl: 1rem;
+    --radius-3xl: 1.5rem;
+    --animate-ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+    --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    --animate-bounce: bounce 1s infinite;
+    --blur-md: 12px;
+    --blur-xl: 24px;
+    --blur-3xl: 64px;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
+    --font-display: 'Space Grotesk', sans-serif;
+    --font-hand: Caveat, cursive;
+  }
+}
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+  }
+  html, :host {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+    font-feature-settings: var(--default-font-feature-settings, normal);
+    font-variation-settings: var(--default-font-variation-settings, normal);
+    -webkit-tap-highlight-color: transparent;
+  }
+  hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
+  }
+  abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  a {
+    color: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+  }
+  b, strong {
+    font-weight: bolder;
+  }
+  code, kbd, samp, pre {
+    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+    font-feature-settings: var(--default-mono-font-feature-settings, normal);
+    font-variation-settings: var(--default-mono-font-variation-settings, normal);
+    font-size: 1em;
+  }
+  small {
+    font-size: 80%;
+  }
+  sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  sup {
+    top: -0.5em;
+  }
+  table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+  }
+  :-moz-focusring {
+    outline: auto;
+  }
+  progress {
+    vertical-align: baseline;
+  }
+  summary {
+    display: list-item;
+  }
+  ol, ul, menu {
+    list-style: none;
+  }
+  img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  button, input, select, optgroup, textarea, ::file-selector-button {
+    font: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+  }
+  :where(select:is([multiple], [size])) optgroup {
+    font-weight: bolder;
+  }
+  :where(select:is([multiple], [size])) optgroup option {
+    padding-inline-start: 20px;
+  }
+  ::file-selector-button {
+    margin-inline-end: 4px;
+  }
+  ::placeholder {
+    opacity: 1;
+  }
+  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
+    ::placeholder {
+      color: currentcolor;
+      @supports (color: color-mix(in lab, red, red)) {
+        color: color-mix(in oklab, currentcolor 50%, transparent);
+      }
+    }
+  }
+  textarea {
+    resize: vertical;
+  }
+  ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  ::-webkit-date-and-time-value {
+    min-height: 1lh;
+    text-align: inherit;
+  }
+  ::-webkit-datetime-edit {
+    display: inline-flex;
+  }
+  ::-webkit-datetime-edit-fields-wrapper {
+    padding: 0;
+  }
+  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
+    padding-block: 0;
+  }
+  :-moz-ui-invalid {
+    box-shadow: none;
+  }
+  button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-selector-button {
+    appearance: button;
+  }
+  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    height: auto;
+  }
+  [hidden]:where(:not([hidden="until-found"])) {
+    display: none !important;
+  }
+}
+@layer utilities {
+  .pointer-events-none {
+    pointer-events: none;
+  }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  .absolute {
+    position: absolute;
+  }
+  .fixed {
+    position: fixed;
+  }
+  .relative {
+    position: relative;
+  }
+  .inset-0 {
+    inset: calc(var(--spacing) * 0);
+  }
+  .inset-x-0 {
+    inset-inline: calc(var(--spacing) * 0);
+  }
+  .-top-1 {
+    top: calc(var(--spacing) * -1);
+  }
+  .-top-20 {
+    top: calc(var(--spacing) * -20);
+  }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
+  .top-1\.5 {
+    top: calc(var(--spacing) * 1.5);
+  }
+  .top-1\/2 {
+    top: calc(1/2 * 100%);
+  }
+  .top-4 {
+    top: calc(var(--spacing) * 4);
+  }
+  .top-20 {
+    top: calc(var(--spacing) * 20);
+  }
+  .-right-1 {
+    right: calc(var(--spacing) * -1);
+  }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
+  .right-2 {
+    right: calc(var(--spacing) * 2);
+  }
+  .right-4 {
+    right: calc(var(--spacing) * 4);
+  }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
+  .bottom-2 {
+    bottom: calc(var(--spacing) * 2);
+  }
+  .bottom-4 {
+    bottom: calc(var(--spacing) * 4);
+  }
+  .-left-20 {
+    left: calc(var(--spacing) * -20);
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
+  }
+  .left-1\/2 {
+    left: calc(1/2 * 100%);
+  }
+  .left-3 {
+    left: calc(var(--spacing) * 3);
+  }
+  .left-4 {
+    left: calc(var(--spacing) * 4);
+  }
+  .-z-10 {
+    z-index: calc(10 * -1);
+  }
+  .z-\[30\] {
+    z-index: 30;
+  }
+  .z-\[35\] {
+    z-index: 35;
+  }
+  .z-\[80\] {
+    z-index: 80;
+  }
+  .z-\[90\] {
+    z-index: 90;
+  }
+  .z-\[95\] {
+    z-index: 95;
+  }
+  .z-\[100\] {
+    z-index: 100;
+  }
+  .z-\[110\] {
+    z-index: 110;
+  }
+  .z-\[120\] {
+    z-index: 120;
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .mt-1 {
+    margin-top: calc(var(--spacing) * 1);
+  }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
+  }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
+  }
+  .mt-9 {
+    margin-top: calc(var(--spacing) * 9);
+  }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
+  .mr-1 {
+    margin-right: calc(var(--spacing) * 1);
+  }
+  .mr-2 {
+    margin-right: calc(var(--spacing) * 2);
+  }
+  .mb-1 {
+    margin-bottom: calc(var(--spacing) * 1);
+  }
+  .ml-1 {
+    margin-left: calc(var(--spacing) * 1);
+  }
+  .ml-auto {
+    margin-left: auto;
+  }
+  .block {
+    display: block;
+  }
+  .flex {
+    display: flex;
+  }
+  .grid {
+    display: grid;
+  }
+  .hidden {
+    display: none;
+  }
+  .inline-block {
+    display: inline-block;
+  }
+  .inline-flex {
+    display: inline-flex;
+  }
+  .h-1\.5 {
+    height: calc(var(--spacing) * 1.5);
+  }
+  .h-2 {
+    height: calc(var(--spacing) * 2);
+  }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
+  .h-6 {
+    height: calc(var(--spacing) * 6);
+  }
+  .h-8 {
+    height: calc(var(--spacing) * 8);
+  }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
+  .h-12 {
+    height: calc(var(--spacing) * 12);
+  }
+  .h-24 {
+    height: calc(var(--spacing) * 24);
+  }
+  .h-28 {
+    height: calc(var(--spacing) * 28);
+  }
+  .h-36 {
+    height: calc(var(--spacing) * 36);
+  }
+  .h-44 {
+    height: calc(var(--spacing) * 44);
+  }
+  .h-64 {
+    height: calc(var(--spacing) * 64);
+  }
+  .h-72 {
+    height: calc(var(--spacing) * 72);
+  }
+  .h-96 {
+    height: calc(var(--spacing) * 96);
+  }
+  .h-\[330px\] {
+    height: 330px;
+  }
+  .h-full {
+    height: 100%;
+  }
+  .max-h-\[90vh\] {
+    max-height: 90vh;
+  }
+  .min-h-\[40px\] {
+    min-height: 40px;
+  }
+  .min-h-\[72px\] {
+    min-height: 72px;
+  }
+  .w-0 {
+    width: calc(var(--spacing) * 0);
+  }
+  .w-2 {
+    width: calc(var(--spacing) * 2);
+  }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
+  .w-6 {
+    width: calc(var(--spacing) * 6);
+  }
+  .w-8 {
+    width: calc(var(--spacing) * 8);
+  }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
+  .w-12 {
+    width: calc(var(--spacing) * 12);
+  }
+  .w-24 {
+    width: calc(var(--spacing) * 24);
+  }
+  .w-36 {
+    width: calc(var(--spacing) * 36);
+  }
+  .w-44 {
+    width: calc(var(--spacing) * 44);
+  }
+  .w-64 {
+    width: calc(var(--spacing) * 64);
+  }
+  .w-72 {
+    width: calc(var(--spacing) * 72);
+  }
+  .w-96 {
+    width: calc(var(--spacing) * 96);
+  }
+  .w-\[20\%\] {
+    width: 20%;
+  }
+  .w-\[40\%\] {
+    width: 40%;
+  }
+  .w-full {
+    width: 100%;
+  }
+  .max-w-2xl {
+    max-width: var(--container-2xl);
+  }
+  .max-w-3xl {
+    max-width: var(--container-3xl);
+  }
+  .max-w-4xl {
+    max-width: var(--container-4xl);
+  }
+  .max-w-5xl {
+    max-width: var(--container-5xl);
+  }
+  .max-w-7xl {
+    max-width: var(--container-7xl);
+  }
+  .max-w-\[90\%\] {
+    max-width: 90%;
+  }
+  .max-w-\[95vw\] {
+    max-width: 95vw;
+  }
+  .max-w-\[320px\] {
+    max-width: 320px;
+  }
+  .max-w-\[420px\] {
+    max-width: 420px;
+  }
+  .max-w-lg {
+    max-width: var(--container-lg);
+  }
+  .max-w-xl {
+    max-width: var(--container-xl);
+  }
+  .max-w-xs {
+    max-width: var(--container-xs);
+  }
+  .min-w-0 {
+    min-width: calc(var(--spacing) * 0);
+  }
+  .flex-1 {
+    flex: 1;
+  }
+  .shrink-0 {
+    flex-shrink: 0;
+  }
+  .-translate-x-1\/2 {
+    --tw-translate-x: calc(calc(1/2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-1\/2 {
+    --tw-translate-y: calc(calc(1/2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-rotate-1 {
+    rotate: calc(1deg * -1);
+  }
+  .-rotate-3 {
+    rotate: calc(3deg * -1);
+  }
+  .-rotate-90 {
+    rotate: calc(90deg * -1);
+  }
+  .animate-bounce {
+    animation: var(--animate-bounce);
+  }
+  .animate-ping {
+    animation: var(--animate-ping);
+  }
+  .animate-pulse {
+    animation: var(--animate-pulse);
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .scroll-mt-24 {
+    scroll-margin-top: calc(var(--spacing) * 24);
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .content-start {
+    align-content: flex-start;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .items-end {
+    align-items: flex-end;
+  }
+  .items-start {
+    align-items: flex-start;
+  }
+  .items-stretch {
+    align-items: stretch;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
+  .gap-1\.5 {
+    gap: calc(var(--spacing) * 1.5);
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
+  }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
+  }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
+  }
+  .space-y-2 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-3 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-4 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .overflow-x-auto {
+    overflow-x: auto;
+  }
+  .overflow-y-auto {
+    overflow-y: auto;
+  }
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
+  .rounded {
+    border-radius: 0.25rem;
+  }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
+  .rounded-3xl {
+    border-radius: var(--radius-3xl);
+  }
+  .rounded-\[28px\] {
+    border-radius: 28px;
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
+  .border-4 {
+    border-style: var(--tw-border-style);
+    border-width: 4px;
+  }
+  .border-t-4 {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 4px;
+  }
+  .border-r-2 {
+    border-right-style: var(--tw-border-style);
+    border-right-width: 2px;
+  }
+  .border-dashed {
+    --tw-border-style: dashed;
+    border-style: dashed;
+  }
+  .border-\[\#0B102F\] {
+    border-color: #0B102F;
+  }
+  .border-amber-300\/30 {
+    border-color: color-mix(in srgb, oklch(87.9% 0.169 91.605) 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-amber-300) 30%, transparent);
+    }
+  }
+  .border-amber-300\/40 {
+    border-color: color-mix(in srgb, oklch(87.9% 0.169 91.605) 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-amber-300) 40%, transparent);
+    }
+  }
+  .border-amber-400\/30 {
+    border-color: color-mix(in srgb, oklch(82.8% 0.189 84.429) 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-amber-400) 30%, transparent);
+    }
+  }
+  .border-black {
+    border-color: var(--color-black);
+  }
+  .border-cyan-300 {
+    border-color: var(--color-cyan-300);
+  }
+  .border-cyan-400\/20 {
+    border-color: color-mix(in srgb, oklch(78.9% 0.154 211.53) 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-cyan-400) 20%, transparent);
+    }
+  }
+  .border-cyan-400\/30 {
+    border-color: color-mix(in srgb, oklch(78.9% 0.154 211.53) 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-cyan-400) 30%, transparent);
+    }
+  }
+  .border-cyan-400\/40 {
+    border-color: color-mix(in srgb, oklch(78.9% 0.154 211.53) 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-cyan-400) 40%, transparent);
+    }
+  }
+  .border-cyan-400\/50 {
+    border-color: color-mix(in srgb, oklch(78.9% 0.154 211.53) 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-cyan-400) 50%, transparent);
+    }
+  }
+  .border-green-500\/20 {
+    border-color: color-mix(in srgb, oklch(72.3% 0.219 149.579) 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-green-500) 20%, transparent);
+    }
+  }
+  .border-lime-400\/30 {
+    border-color: color-mix(in srgb, oklch(84.1% 0.238 128.85) 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-lime-400) 30%, transparent);
+    }
+  }
+  .border-orange-400\/30 {
+    border-color: color-mix(in srgb, oklch(75% 0.183 55.934) 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-orange-400) 30%, transparent);
+    }
+  }
+  .border-pink-400\/30 {
+    border-color: color-mix(in srgb, oklch(71.8% 0.202 349.761) 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-pink-400) 30%, transparent);
+    }
+  }
+  .border-violet-400\/30 {
+    border-color: color-mix(in srgb, oklch(70.2% 0.183 293.541) 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-violet-400) 30%, transparent);
+    }
+  }
+  .border-violet-500\/30 {
+    border-color: color-mix(in srgb, oklch(60.6% 0.25 292.717) 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-violet-500) 30%, transparent);
+    }
+  }
+  .border-white {
+    border-color: var(--color-white);
+  }
+  .border-white\/10 {
+    border-color: color-mix(in srgb, #fff 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+    }
+  }
+  .border-white\/15 {
+    border-color: color-mix(in srgb, #fff 15%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 15%, transparent);
+    }
+  }
+  .border-white\/20 {
+    border-color: color-mix(in srgb, #fff 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 20%, transparent);
+    }
+  }
+  .border-white\/25 {
+    border-color: color-mix(in srgb, #fff 25%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 25%, transparent);
+    }
+  }
+  .border-white\/30 {
+    border-color: color-mix(in srgb, #fff 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 30%, transparent);
+    }
+  }
+  .\!border-t-violet-500 {
+    border-top-color: var(--color-violet-500) !important;
+  }
+  .bg-\[\#0B102F\] {
+    background-color: #0B102F;
+  }
+  .bg-\[\#0B141A\] {
+    background-color: #0B141A;
+  }
+  .bg-\[\#00A884\] {
+    background-color: #00A884;
+  }
+  .bg-\[\#1F2C34\] {
+    background-color: #1F2C34;
+  }
+  .bg-\[\#2A3942\] {
+    background-color: #2A3942;
+  }
+  .bg-\[\#05071A\]\/85 {
+    background-color: color-mix(in oklab, #05071A 85%, transparent);
+  }
+  .bg-amber-400\/10 {
+    background-color: color-mix(in srgb, oklch(82.8% 0.189 84.429) 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-amber-400) 10%, transparent);
+    }
+  }
+  .bg-black {
+    background-color: var(--color-black);
+  }
+  .bg-black\/20 {
+    background-color: color-mix(in srgb, #000 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 20%, transparent);
+    }
+  }
+  .bg-black\/30 {
+    background-color: color-mix(in srgb, #000 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 30%, transparent);
+    }
+  }
+  .bg-black\/40 {
+    background-color: color-mix(in srgb, #000 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 40%, transparent);
+    }
+  }
+  .bg-black\/50 {
+    background-color: color-mix(in srgb, #000 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 50%, transparent);
+    }
+  }
+  .bg-black\/60 {
+    background-color: color-mix(in srgb, #000 60%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 60%, transparent);
+    }
+  }
+  .bg-black\/70 {
+    background-color: color-mix(in srgb, #000 70%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 70%, transparent);
+    }
+  }
+  .bg-black\/80 {
+    background-color: color-mix(in srgb, #000 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 80%, transparent);
+    }
+  }
+  .bg-cyan-300\/15 {
+    background-color: color-mix(in srgb, oklch(86.5% 0.127 207.078) 15%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-cyan-300) 15%, transparent);
+    }
+  }
+  .bg-cyan-400 {
+    background-color: var(--color-cyan-400);
+  }
+  .bg-cyan-400\/10 {
+    background-color: color-mix(in srgb, oklch(78.9% 0.154 211.53) 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-cyan-400) 10%, transparent);
+    }
+  }
+  .bg-cyan-400\/20 {
+    background-color: color-mix(in srgb, oklch(78.9% 0.154 211.53) 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-cyan-400) 20%, transparent);
+    }
+  }
+  .bg-gray-100 {
+    background-color: var(--color-gray-100);
+  }
+  .bg-green-400 {
+    background-color: var(--color-green-400);
+  }
+  .bg-green-500 {
+    background-color: var(--color-green-500);
+  }
+  .bg-green-500\/10 {
+    background-color: color-mix(in srgb, oklch(72.3% 0.219 149.579) 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-green-500) 10%, transparent);
+    }
+  }
+  .bg-green-500\/20 {
+    background-color: color-mix(in srgb, oklch(72.3% 0.219 149.579) 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-green-500) 20%, transparent);
+    }
+  }
+  .bg-lime-300 {
+    background-color: var(--color-lime-300);
+  }
+  .bg-lime-400 {
+    background-color: var(--color-lime-400);
+  }
+  .bg-lime-400\/10 {
+    background-color: color-mix(in srgb, oklch(84.1% 0.238 128.85) 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-lime-400) 10%, transparent);
+    }
+  }
+  .bg-lime-400\/20 {
+    background-color: color-mix(in srgb, oklch(84.1% 0.238 128.85) 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-lime-400) 20%, transparent);
+    }
+  }
+  .bg-orange-500\/15 {
+    background-color: color-mix(in srgb, oklch(70.5% 0.213 47.604) 15%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-orange-500) 15%, transparent);
+    }
+  }
+  .bg-pink-400\/10 {
+    background-color: color-mix(in srgb, oklch(71.8% 0.202 349.761) 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-pink-400) 10%, transparent);
+    }
+  }
+  .bg-red-500 {
+    background-color: var(--color-red-500);
+  }
+  .bg-violet-400 {
+    background-color: var(--color-violet-400);
+  }
+  .bg-violet-400\/10 {
+    background-color: color-mix(in srgb, oklch(70.2% 0.183 293.541) 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-violet-400) 10%, transparent);
+    }
+  }
+  .bg-violet-500 {
+    background-color: var(--color-violet-500);
+  }
+  .bg-violet-600\/30 {
+    background-color: color-mix(in srgb, oklch(54.1% 0.281 293.009) 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-violet-600) 30%, transparent);
+    }
+  }
+  .bg-white {
+    background-color: var(--color-white);
+  }
+  .bg-white\/5 {
+    background-color: color-mix(in srgb, #fff 5%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 5%, transparent);
+    }
+  }
+  .bg-white\/10 {
+    background-color: color-mix(in srgb, #fff 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+    }
+  }
+  .bg-white\/20 {
+    background-color: color-mix(in srgb, #fff 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 20%, transparent);
+    }
+  }
+  .bg-gradient-to-b {
+    --tw-gradient-position: to bottom in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .bg-gradient-to-br {
+    --tw-gradient-position: to bottom right in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .bg-gradient-to-r {
+    --tw-gradient-position: to right in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .bg-\[url\(\'https\:\/\/www\.transparenttextures\.com\/patterns\/cubes\.png\'\)\] {
+    background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+  }
+  .from-amber-400\/15 {
+    --tw-gradient-from: color-mix(in srgb, oklch(82.8% 0.189 84.429) 15%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-from: color-mix(in oklab, var(--color-amber-400) 15%, transparent);
+    }
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-black {
+    --tw-gradient-from: var(--color-black);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-cyan-400 {
+    --tw-gradient-from: var(--color-cyan-400);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-cyan-400\/20 {
+    --tw-gradient-from: color-mix(in srgb, oklch(78.9% 0.154 211.53) 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-from: color-mix(in oklab, var(--color-cyan-400) 20%, transparent);
+    }
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-cyan-500 {
+    --tw-gradient-from: var(--color-cyan-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-cyan-700\/80 {
+    --tw-gradient-from: color-mix(in srgb, oklch(52% 0.105 223.128) 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-from: color-mix(in oklab, var(--color-cyan-700) 80%, transparent);
+    }
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-indigo-700 {
+    --tw-gradient-from: var(--color-indigo-700);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-lime-300 {
+    --tw-gradient-from: var(--color-lime-300);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-orange-500 {
+    --tw-gradient-from: var(--color-orange-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-violet-600\/20 {
+    --tw-gradient-from: color-mix(in srgb, oklch(54.1% 0.281 293.009) 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-from: color-mix(in oklab, var(--color-violet-600) 20%, transparent);
+    }
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-violet-600\/30 {
+    --tw-gradient-from: color-mix(in srgb, oklch(54.1% 0.281 293.009) 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-from: color-mix(in oklab, var(--color-violet-600) 30%, transparent);
+    }
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .via-cyan-400\/10 {
+    --tw-gradient-via: color-mix(in srgb, oklch(78.9% 0.154 211.53) 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-via: color-mix(in oklab, var(--color-cyan-400) 10%, transparent);
+    }
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+  .via-violet-500 {
+    --tw-gradient-via: var(--color-violet-500);
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+  .via-violet-700 {
+    --tw-gradient-via: var(--color-violet-700);
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+  .via-violet-700\/80 {
+    --tw-gradient-via: color-mix(in srgb, oklch(49.1% 0.27 292.581) 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-via: color-mix(in oklab, var(--color-violet-700) 80%, transparent);
+    }
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+  .to-cyan-400 {
+    --tw-gradient-to: var(--color-cyan-400);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-cyan-400\/10 {
+    --tw-gradient-to: color-mix(in srgb, oklch(78.9% 0.154 211.53) 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-to: color-mix(in oklab, var(--color-cyan-400) 10%, transparent);
+    }
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-gray-900 {
+    --tw-gradient-to: var(--color-gray-900);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-indigo-800 {
+    --tw-gradient-to: var(--color-indigo-800);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-pink-500 {
+    --tw-gradient-to: var(--color-pink-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-pink-500\/20 {
+    --tw-gradient-to: color-mix(in srgb, oklch(65.6% 0.241 354.308) 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-to: color-mix(in oklab, var(--color-pink-500) 20%, transparent);
+    }
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-pink-600 {
+    --tw-gradient-to: var(--color-pink-600);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-pink-700 {
+    --tw-gradient-to: var(--color-pink-700);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-transparent {
+    --tw-gradient-to: transparent;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-violet-500 {
+    --tw-gradient-to: var(--color-violet-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-violet-500\/20 {
+    --tw-gradient-to: color-mix(in srgb, oklch(60.6% 0.25 292.717) 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-to: color-mix(in oklab, var(--color-violet-500) 20%, transparent);
+    }
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-violet-600 {
+    --tw-gradient-to: var(--color-violet-600);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-violet-600\/20 {
+    --tw-gradient-to: color-mix(in srgb, oklch(54.1% 0.281 293.009) 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-to: color-mix(in oklab, var(--color-violet-600) 20%, transparent);
+    }
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .object-cover {
+    object-fit: cover;
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
+  }
+  .px-1\.5 {
+    padding-inline: calc(var(--spacing) * 1.5);
+  }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+  .py-0\.5 {
+    padding-block: calc(var(--spacing) * 0.5);
+  }
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
+  }
+  .py-1\.5 {
+    padding-block: calc(var(--spacing) * 1.5);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .py-2\.5 {
+    padding-block: calc(var(--spacing) * 2.5);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .py-3\.5 {
+    padding-block: calc(var(--spacing) * 3.5);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
+  }
+  .pt-28 {
+    padding-top: calc(var(--spacing) * 28);
+  }
+  .pr-1 {
+    padding-right: calc(var(--spacing) * 1);
+  }
+  .pr-2 {
+    padding-right: calc(var(--spacing) * 2);
+  }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
+  }
+  .pb-10 {
+    padding-bottom: calc(var(--spacing) * 10);
+  }
+  .pb-28 {
+    padding-bottom: calc(var(--spacing) * 28);
+  }
+  .pl-5 {
+    padding-left: calc(var(--spacing) * 5);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-left {
+    text-align: left;
+  }
+  .align-top {
+    vertical-align: top;
+  }
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .font-hand {
+    font-family: var(--font-hand);
+  }
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
+  .text-7xl {
+    font-size: var(--text-7xl);
+    line-height: var(--tw-leading, var(--text-7xl--line-height));
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-xs {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  .text-\[10px\] {
+    font-size: 10px;
+  }
+  .text-\[11px\] {
+    font-size: 11px;
+  }
+  .text-\[15px\] {
+    font-size: 15px;
+  }
+  .leading-none {
+    --tw-leading: 1;
+    line-height: 1;
+  }
+  .leading-relaxed {
+    --tw-leading: var(--leading-relaxed);
+    line-height: var(--leading-relaxed);
+  }
+  .leading-snug {
+    --tw-leading: var(--leading-snug);
+    line-height: var(--leading-snug);
+  }
+  .leading-tight {
+    --tw-leading: var(--leading-tight);
+    line-height: var(--leading-tight);
+  }
+  .font-black {
+    --tw-font-weight: var(--font-weight-black);
+    font-weight: var(--font-weight-black);
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .tracking-\[\.2em\] {
+    --tw-tracking: .2em;
+    letter-spacing: .2em;
+  }
+  .tracking-tight {
+    --tw-tracking: var(--tracking-tight);
+    letter-spacing: var(--tracking-tight);
+  }
+  .tracking-wide {
+    --tw-tracking: var(--tracking-wide);
+    letter-spacing: var(--tracking-wide);
+  }
+  .tracking-wider {
+    --tw-tracking: var(--tracking-wider);
+    letter-spacing: var(--tracking-wider);
+  }
+  .tracking-widest {
+    --tw-tracking: var(--tracking-widest);
+    letter-spacing: var(--tracking-widest);
+  }
+  .whitespace-nowrap {
+    white-space: nowrap;
+  }
+  .text-amber-100 {
+    color: var(--color-amber-100);
+  }
+  .text-amber-200 {
+    color: var(--color-amber-200);
+  }
+  .text-amber-300 {
+    color: var(--color-amber-300);
+  }
+  .text-black {
+    color: var(--color-black);
+  }
+  .text-cyan-100 {
+    color: var(--color-cyan-100);
+  }
+  .text-cyan-200 {
+    color: var(--color-cyan-200);
+  }
+  .text-cyan-300 {
+    color: var(--color-cyan-300);
+  }
+  .text-cyan-400 {
+    color: var(--color-cyan-400);
+  }
+  .text-green-300 {
+    color: var(--color-green-300);
+  }
+  .text-green-400 {
+    color: var(--color-green-400);
+  }
+  .text-lime-300 {
+    color: var(--color-lime-300);
+  }
+  .text-orange-200 {
+    color: var(--color-orange-200);
+  }
+  .text-orange-300 {
+    color: var(--color-orange-300);
+  }
+  .text-pink-300 {
+    color: var(--color-pink-300);
+  }
+  .text-slate-200 {
+    color: var(--color-slate-200);
+  }
+  .text-slate-300 {
+    color: var(--color-slate-300);
+  }
+  .text-slate-400 {
+    color: var(--color-slate-400);
+  }
+  .text-slate-500 {
+    color: var(--color-slate-500);
+  }
+  .text-slate-600 {
+    color: var(--color-slate-600);
+  }
+  .text-violet-100 {
+    color: var(--color-violet-100);
+  }
+  .text-violet-300 {
+    color: var(--color-violet-300);
+  }
+  .text-white {
+    color: var(--color-white);
+  }
+  .text-white\/70 {
+    color: color-mix(in srgb, #fff 70%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 70%, transparent);
+    }
+  }
+  .text-white\/85 {
+    color: color-mix(in srgb, #fff 85%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 85%, transparent);
+    }
+  }
+  .text-white\/90 {
+    color: color-mix(in srgb, #fff 90%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 90%, transparent);
+    }
+  }
+  .uppercase {
+    text-transform: uppercase;
+  }
+  .antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .accent-cyan-400 {
+    accent-color: var(--color-cyan-400);
+  }
+  .accent-lime-400 {
+    accent-color: var(--color-lime-400);
+  }
+  .accent-pink-400 {
+    accent-color: var(--color-pink-400);
+  }
+  .opacity-0 {
+    opacity: 0%;
+  }
+  .opacity-30 {
+    opacity: 30%;
+  }
+  .opacity-60 {
+    opacity: 60%;
+  }
+  .opacity-90 {
+    opacity: 90%;
+  }
+  .opacity-100 {
+    opacity: 100%;
+  }
+  .shadow-2xl {
+    --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-lg {
+    --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-xl {
+    --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .ring-4 {
+    --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-violet-500\/30 {
+    --tw-shadow-color: color-mix(in srgb, oklch(60.6% 0.25 292.717) 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-violet-500) 30%, transparent) var(--tw-shadow-alpha), transparent);
+    }
+  }
+  .ring-cyan-400 {
+    --tw-ring-color: var(--color-cyan-400);
+  }
+  .blur-3xl {
+    --tw-blur: blur(var(--blur-3xl));
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .blur-\[80px\] {
+    --tw-blur: blur(80px);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .blur-\[100px\] {
+    --tw-blur: blur(100px);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .backdrop-blur {
+    --tw-backdrop-blur: blur(8px);
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .backdrop-blur-\[2px\] {
+    --tw-backdrop-blur: blur(2px);
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .backdrop-blur-md {
+    --tw-backdrop-blur: blur(var(--blur-md));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .backdrop-blur-xl {
+    --tw-backdrop-blur: blur(var(--blur-xl));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .transition {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, visibility, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .group-hover\:scale-125 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-scale-x: 125%;
+        --tw-scale-y: 125%;
+        --tw-scale-z: 125%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .group-hover\:rotate-12 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        rotate: 12deg;
+      }
+    }
+  }
+  .group-hover\:opacity-100 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        opacity: 100%;
+      }
+    }
+  }
+  .placeholder\:text-slate-500 {
+    &::placeholder {
+      color: var(--color-slate-500);
+    }
+  }
+  .hover\:scale-110 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 110%;
+        --tw-scale-y: 110%;
+        --tw-scale-z: 110%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .hover\:scale-\[1\.02\] {
+    &:hover {
+      @media (hover: hover) {
+        scale: 1.02;
+      }
+    }
+  }
+  .hover\:border-cyan-400 {
+    &:hover {
+      @media (hover: hover) {
+        border-color: var(--color-cyan-400);
+      }
+    }
+  }
+  .hover\:bg-amber-300 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-amber-300);
+      }
+    }
+  }
+  .hover\:bg-black\/60 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in srgb, #000 60%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          background-color: color-mix(in oklab, var(--color-black) 60%, transparent);
+        }
+      }
+    }
+  }
+  .hover\:bg-cyan-300 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-cyan-300);
+      }
+    }
+  }
+  .hover\:bg-cyan-400 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-cyan-400);
+      }
+    }
+  }
+  .hover\:bg-cyan-400\/10 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in srgb, oklch(78.9% 0.154 211.53) 10%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          background-color: color-mix(in oklab, var(--color-cyan-400) 10%, transparent);
+        }
+      }
+    }
+  }
+  .hover\:bg-gray-200 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-200);
+      }
+    }
+  }
+  .hover\:bg-gray-800 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-800);
+      }
+    }
+  }
+  .hover\:bg-orange-200 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-orange-200);
+      }
+    }
+  }
+  .hover\:bg-red-500 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-red-500);
+      }
+    }
+  }
+  .hover\:bg-white {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-white);
+      }
+    }
+  }
+  .hover\:bg-white\/10 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in srgb, #fff 10%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+        }
+      }
+    }
+  }
+  .hover\:bg-white\/20 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in srgb, #fff 20%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          background-color: color-mix(in oklab, var(--color-white) 20%, transparent);
+        }
+      }
+    }
+  }
+  .hover\:text-black {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-black);
+      }
+    }
+  }
+  .hover\:text-cyan-300 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-cyan-300);
+      }
+    }
+  }
+  .sm\:right-6 {
+    @media (width >= 40rem) {
+      right: calc(var(--spacing) * 6);
+    }
+  }
+  .sm\:bottom-6 {
+    @media (width >= 40rem) {
+      bottom: calc(var(--spacing) * 6);
+    }
+  }
+  .sm\:flex {
+    @media (width >= 40rem) {
+      display: flex;
+    }
+  }
+  .sm\:inline-block {
+    @media (width >= 40rem) {
+      display: inline-block;
+    }
+  }
+  .sm\:w-40 {
+    @media (width >= 40rem) {
+      width: calc(var(--spacing) * 40);
+    }
+  }
+  .sm\:grid-cols-2 {
+    @media (width >= 40rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .sm\:grid-cols-4 {
+    @media (width >= 40rem) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .sm\:flex-row {
+    @media (width >= 40rem) {
+      flex-direction: row;
+    }
+  }
+  .sm\:items-end {
+    @media (width >= 40rem) {
+      align-items: flex-end;
+    }
+  }
+  .sm\:p-5 {
+    @media (width >= 40rem) {
+      padding: calc(var(--spacing) * 5);
+    }
+  }
+  .sm\:p-6 {
+    @media (width >= 40rem) {
+      padding: calc(var(--spacing) * 6);
+    }
+  }
+  .sm\:p-8 {
+    @media (width >= 40rem) {
+      padding: calc(var(--spacing) * 8);
+    }
+  }
+  .sm\:p-10 {
+    @media (width >= 40rem) {
+      padding: calc(var(--spacing) * 10);
+    }
+  }
+  .sm\:px-6 {
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--spacing) * 6);
+    }
+  }
+  .sm\:pt-32 {
+    @media (width >= 40rem) {
+      padding-top: calc(var(--spacing) * 32);
+    }
+  }
+  .sm\:pb-10 {
+    @media (width >= 40rem) {
+      padding-bottom: calc(var(--spacing) * 10);
+    }
+  }
+  .sm\:text-2xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
+  .sm\:text-4xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-4xl);
+      line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+  }
+  .sm\:text-5xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
+    }
+  }
+  .sm\:text-6xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-6xl);
+      line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+  }
+  .sm\:text-7xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-7xl);
+      line-height: var(--tw-leading, var(--text-7xl--line-height));
+    }
+  }
+  .sm\:text-xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+  .md\:w-64 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 64);
+    }
+  }
+  .md\:grid-cols-2 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .md\:grid-cols-3 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .md\:grid-cols-5 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+  }
+  .md\:grid-cols-\[320px_1fr\] {
+    @media (width >= 48rem) {
+      grid-template-columns: 320px 1fr;
+    }
+  }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
+    }
+  }
+  .md\:items-end {
+    @media (width >= 48rem) {
+      align-items: flex-end;
+    }
+  }
+  .lg\:flex {
+    @media (width >= 64rem) {
+      display: flex;
+    }
+  }
+  .lg\:hidden {
+    @media (width >= 64rem) {
+      display: none;
+    }
+  }
+  .lg\:grid-cols-2 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .lg\:grid-cols-3 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .lg\:grid-cols-\[\.8fr_1\.6fr\] {
+    @media (width >= 64rem) {
+      grid-template-columns: .8fr 1.6fr;
+    }
+  }
+  .lg\:grid-cols-\[1\.15fr_\.85fr\] {
+    @media (width >= 64rem) {
+      grid-template-columns: 1.15fr .85fr;
+    }
+  }
+  .lg\:grid-cols-\[1fr_\.85fr\] {
+    @media (width >= 64rem) {
+      grid-template-columns: 1fr .85fr;
+    }
+  }
+  .lg\:grid-cols-\[420px_1fr\] {
+    @media (width >= 64rem) {
+      grid-template-columns: 420px 1fr;
+    }
+  }
+  .lg\:flex-row {
+    @media (width >= 64rem) {
+      flex-direction: row;
+    }
+  }
+}
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-space-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-gradient-position {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-via {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-to {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-via-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --tw-gradient-via-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+@property --tw-gradient-to-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-inset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-ring-inset {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-offset-width {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --tw-ring-offset-color {
+  syntax: "*";
+  inherits: false;
+  initial-value: #fff;
+}
+@property --tw-ring-offset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-drop-shadow-size {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
+      --tw-space-y-reverse: 0;
+      --tw-border-style: solid;
+      --tw-gradient-position: initial;
+      --tw-gradient-from: #0000;
+      --tw-gradient-via: #0000;
+      --tw-gradient-to: #0000;
+      --tw-gradient-stops: initial;
+      --tw-gradient-via-stops: initial;
+      --tw-gradient-from-position: 0%;
+      --tw-gradient-via-position: 50%;
+      --tw-gradient-to-position: 100%;
+      --tw-leading: initial;
+      --tw-font-weight: initial;
+      --tw-tracking: initial;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-color: initial;
+      --tw-shadow-alpha: 100%;
+      --tw-inset-shadow: 0 0 #0000;
+      --tw-inset-shadow-color: initial;
+      --tw-inset-shadow-alpha: 100%;
+      --tw-ring-color: initial;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-inset-ring-color: initial;
+      --tw-inset-ring-shadow: 0 0 #0000;
+      --tw-ring-inset: initial;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-blur: initial;
+      --tw-brightness: initial;
+      --tw-contrast: initial;
+      --tw-grayscale: initial;
+      --tw-hue-rotate: initial;
+      --tw-invert: initial;
+      --tw-opacity: initial;
+      --tw-saturate: initial;
+      --tw-sepia: initial;
+      --tw-drop-shadow: initial;
+      --tw-drop-shadow-color: initial;
+      --tw-drop-shadow-alpha: 100%;
+      --tw-drop-shadow-size: initial;
+      --tw-backdrop-blur: initial;
+      --tw-backdrop-brightness: initial;
+      --tw-backdrop-contrast: initial;
+      --tw-backdrop-grayscale: initial;
+      --tw-backdrop-hue-rotate: initial;
+      --tw-backdrop-invert: initial;
+      --tw-backdrop-opacity: initial;
+      --tw-backdrop-saturate: initial;
+      --tw-backdrop-sepia: initial;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-scale-z: 1;
+    }
+  }
+}
+
+</style>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Caveat:wght@600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+<style>
+*{-webkit-tap-highlight-color:transparent}
+html{background:#05071A;scroll-padding-top:110px}
+body{background:#05071A;color:#E2E8F0;font-family:Inter,sans-serif;overflow-x:hidden}
+::selection{background:#22D3EE;color:#05071A}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:#0B102F}
+::-webkit-scrollbar-thumb{background:linear-gradient(#22D3EE,#8B5CF6);border-radius:10px}
+.glass{background:rgba(11,16,47,.72);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.1)}
+.grad-text{background:linear-gradient(90deg,#22D3EE,#8B5CF6,#F472B6,#FBBF24);-webkit-background-clip:text;background-clip:text;color:transparent;background-size:300% 100%;animation:gradMove 6s ease infinite}
+@keyframes gradMove{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.grid-bg{background-image:linear-gradient(rgba(139,92,246,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(139,92,246,.12) 1px,transparent 1px);background-size:40px 40px;mask-image:radial-gradient(ellipse 80% 70% at 50% 20%,black 40%,transparent 100%)}
+.card-hover{transition:.35s cubic-bezier(.2,.9,.3,1.2)}
+.card-hover:hover{transform:translateY(-8px) scale(1.01);border-color:rgba(34,211,238,.6);box-shadow:0 20px 60px -10px rgba(34,211,238,.35)}
+.btn-glow{position:relative;overflow:hidden}
+.btn-glow::after{content:'';position:absolute;top:0;left:-100%;width:60%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);transform:skewX(-20deg);transition:.6s}
+.btn-glow:hover::after{left:150%}
+.tour-highlight{position:relative;z-index:35!important;box-shadow:0 0 0 4px #22D3EE,0 0 0 8px rgba(34,211,238,.25),0 0 80px rgba(34,211,238,.5)!important;border-radius:24px!important;transition:.4s}
+.reveal{opacity:0;transform:translateY(40px)}
+.skip-link{position:absolute;left:-999px;top:0;background:#22D3EE;color:#000;padding:10px 18px;z-index:200;border-radius:0 0 12px 0;font-weight:700}
+.skip-link:focus{left:0}
+.high-contrast{filter:contrast(1.4) saturate(1.2)}
+.high-contrast body,.high-contrast{background:#000!important}
+.reduce-motion *{animation:none!important;transition:none!important}
+.large-text{font-size:112%}
+.dyslexia{font-family: Verdana, sans-serif!important;letter-spacing:.04em;line-height:1.8}
+
+/* ===== BOY CHARACTER ===== */
+.boy-fig{width:200px;height:300px;position:relative;transform:scale(var(--boy-scale,1));transform-origin:bottom center;flex-shrink:0;filter:drop-shadow(0 18px 30px rgba(0,0,0,.45))}
+.boy-fig.float-anim{animation:boyFloat 3s ease-in-out infinite}
+@keyframes boyFloat{0%,100%{transform:scale(var(--boy-scale,1)) translateY(0)}50%{transform:scale(var(--boy-scale,1)) translateY(-10px)}}
+.boy-shadow{position:absolute;bottom:6px;left:50%;transform:translateX(-50%);width:130px;height:20px;background:radial-gradient(ellipse,rgba(0,0,0,.5),transparent 70%);border-radius:50%;animation:shadowPulse 3s ease-in-out infinite}
+@keyframes shadowPulse{0%,100%{transform:translateX(-50%) scale(1);opacity:.7}50%{transform:translateX(-50%) scale(.85);opacity:.4}}
+.boy-legs{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);display:flex;gap:14px;z-index:1}
+.boy-leg{width:28px;height:62px;background:linear-gradient(#1E3A8A,#1E40AF);border-radius:12px 12px 6px 6px;border:3px solid #0F172A;position:relative}
+.boy-leg::after{content:'';position:absolute;bottom:-14px;left:50%;transform:translateX(-50%);width:40px;height:20px;background:#fff;border:3px solid #0F172A;border-radius:12px}
+.boy-leg::before{content:'';position:absolute;bottom:-10px;left:50%;transform:translateX(-50%);width:20px;height:6px;background:#22D3EE;border-radius:4px;z-index:1}
+.boy-body{position:absolute;bottom:82px;left:50%;transform:translateX(-50%);width:124px;height:102px;background:linear-gradient(135deg,#6366F1 0%,#8B5CF6 55%,#6D28D9 100%);border:3px solid #0F172A;border-radius:32px 32px 20px 20px;z-index:2;overflow:visible}
+.boy-body::before{content:'';position:absolute;top:-12px;left:50%;transform:translateX(-50%);width:56px;height:24px;background:#4C1D95;border:3px solid #0F172A;border-radius:12px 12px 0 0}
+.boy-pocket{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);width:64px;height:32px;background:rgba(0,0,0,.25);border:2px solid rgba(255,255,255,.3);border-radius:10px}
+.boy-logo{position:absolute;top:14px;left:50%;transform:translateX(-50%);background:#0B102F;color:#22D3EE;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:13px;padding:3px 10px;border-radius:20px;border:2px solid #22D3EE;letter-spacing:1px}
+.boy-string{position:absolute;top:30px;width:4px;height:28px;background:#E0E7FF;border-radius:4px}
+.boy-string.l{left:42px}.boy-string.r{right:42px}
+.boy-string::after{content:'';position:absolute;bottom:-6px;left:50%;transform:translateX(-50%);width:10px;height:10px;background:#22D3EE;border-radius:50%;border:2px solid #0F172A}
+.boy-arm{position:absolute;top:8px;width:30px;height:74px;background:linear-gradient(#7C8CFF,#6366F1);border:3px solid #0F172A;border-radius:16px;z-index:1}
+.boy-arm.left{left:-20px;transform:rotate(12deg)}
+.boy-arm.right{right:-20px;transform-origin:top center;animation:waveArm 1.6s ease-in-out infinite}
+@keyframes waveArm{0%,100%{transform:rotate(-155deg)}50%{transform:rotate(-115deg)}}
+.boy-hand{position:absolute;bottom:-12px;left:50%;transform:translateX(-50%);width:28px;height:28px;background:#FFC79A;border:3px solid #0F172A;border-radius:50%}
+.boy-arm.right .boy-hand{animation:handWiggle 1.6s ease-in-out infinite}
+@keyframes handWiggle{0%,100%{rotate:-10deg}50%{rotate:10deg}}
+.boy-head-wrap{position:absolute;top:2px;left:50%;transform:translateX(-50%);z-index:3;animation:headBob 3s ease-in-out infinite}
+@keyframes headBob{0%,100%{transform:translateX(-50%) rotate(-2deg)}50%{transform:translateX(-50%) rotate(2deg) translateY(-4px)}}
+.boy-head{width:128px;height:128px;background:#FFC79A;border:3px solid #0F172A;border-radius:50%;position:relative;box-shadow:inset -8px -8px 0 rgba(0,0,0,.08)}
+.boy-hair{position:absolute;top:-10px;left:-8px;right:-8px;height:62px;background:#111827;border:3px solid #0F172A;border-radius:70px 70px 18px 18px;z-index:2;overflow:hidden}
+.boy-hair::before{content:'';position:absolute;bottom:-2px;left:0;right:0;height:22px;background:#111827;clip-path:polygon(0 0,10% 100%,20% 0,30% 100%,40% 0,50% 100%,60% 0,70% 100%,80% 0,90% 100%,100% 0,100% 0,0 0)}
+.boy-hair-shine{position:absolute;top:8px;left:18px;width:40px;height:12px;background:rgba(255,255,255,.2);border-radius:10px;transform:rotate(-15deg)}
+.boy-eyes{position:absolute;top:56px;left:0;right:0;display:flex;justify-content:center;gap:14px;z-index:1}
+.eye{width:28px;height:30px;background:#fff;border:3px solid #0F172A;border-radius:50%;position:relative;overflow:hidden;animation:blink 4.2s infinite}
+@keyframes blink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.05)}}
+.pupil{position:absolute;top:50%;left:50%;transform:translate(-50%,-45%);width:13px;height:15px;background:#0F172A;border-radius:50%}
+.pupil::after{content:'';position:absolute;top:2px;left:2px;width:5px;height:5px;background:#fff;border-radius:50%}
+.boy-glasses{position:absolute;top:52px;left:50%;transform:translateX(-50%);display:flex;gap:4px;z-index:2;pointer-events:none}
+.glass-l,.glass-r{width:38px;height:38px;border:3px solid #0F172A;border-radius:12px;background:rgba(34,211,238,.12)}
+.glass-l{transform:rotate(-3deg)}.glass-r{transform:rotate(3deg)}
+.boy-blush{position:absolute;top:84px;width:18px;height:10px;background:rgba(244,114,182,.7);border-radius:10px;filter:blur(.5px)}
+.boy-blush.l{left:16px}.boy-blush.r{right:16px}
+.boy-mouth{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);width:34px;height:16px;background:#7C2D12;border:2px solid #0F172A;border-radius:0 0 20px 20px;overflow:hidden;transition:.2s}
+.boy-mouth::before{content:'';position:absolute;top:0;left:0;right:0;height:6px;background:#fff}
+.boy-fig.talking .boy-mouth{animation:talk .35s infinite alternate}
+@keyframes talk{from{height:8px;width:26px}to{height:20px;width:36px}}
+.boy-ear{position:absolute;top:64px;width:18px;height:24px;background:#FFC79A;border:3px solid #0F172A;border-radius:50%;z-index:0}
+.boy-ear.l{left:-10px}.boy-ear.r{right:-10px}
+.boy-cap-badge{position:absolute;top:-16px;right:6px;width:30px;height:30px;background:#FBBF24;border:3px solid #0F172A;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;z-index:3;animation:spinSlow 6s linear infinite}
+
+/* speech bubble */
+.speech{position:relative;background:#fff;color:#0B102F;border-radius:20px 20px 20px 4px;padding:14px 16px;box-shadow:0 12px 40px rgba(0,0,0,.35);border:3px solid #0F172A}
+.speech::after{content:'';position:absolute;bottom:-14px;left:28px;width:20px;height:20px;background:#fff;border-right:3px solid #0F172A;border-bottom:3px solid #0F172A;transform:rotate(45deg)}
+.typing-dots span{width:7px;height:7px;background:#8B5CF6;border-radius:50%;display:inline-block;margin-right:4px;animation:tdot 1s infinite}
+.typing-dots span:nth-child(2){animation-delay:.2s}.typing-dots span:nth-child(3){animation-delay:.4s}
+@keyframes tdot{0%,100%{transform:translateY(0);opacity:.5}50%{transform:translateY(-6px);opacity:1}}
+.token-chip{animation:popIn .4s cubic-bezier(.2,1.5,.4,1) backwards}
+@keyframes popIn{from{transform:scale(0) rotate(-10deg);opacity:0}to{transform:scale(1) rotate(0);opacity:1}}
+.marquee-track{display:flex;width:max-content;animation:marquee 24s linear infinite}
+.msg-in{animation:slideInLeft .4s ease backwards}
+.msg-out{animation:slideInRight .4s ease backwards}
+@keyframes slideInLeft{from{transform:translateX(-20px);opacity:0}to{transform:none;opacity:1}}
+@keyframes slideInRight{from{transform:translateX(20px);opacity:0}to{transform:none;opacity:1}}
+.code-block{background:#020617;border:1px solid rgba(34,211,238,.2);border-radius:12px}
+.timeline-line{background:linear-gradient(#22D3EE,#8B5CF6,#F472B6)}
+.badge-lock{filter:grayscale(1);opacity:.45}
+.star-ring{filter:drop-shadow(0 0 12px rgba(251,191,36,.7))}
+input,textarea,select{outline:none}
+input:focus,textarea:focus{border-color:#22D3EE!important;box-shadow:0 0 0 3px rgba(34,211,238,.25)}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height .5s ease}
+.faq-item.open .faq-answer{max-height:500px}
+.faq-item.open .faq-arrow{transform:rotate(180deg)}
+.faq-arrow{transition:.3s}
+.tab-btn.active{background:linear-gradient(90deg,#22D3EE,#8B5CF6);color:#05071A;border-color:transparent}
+.notebook-cell{border-left:3px solid #22D3EE}
+#progressBar{transition:width .1s linear}
+@media(max-width:640px){.boy-fig{--boy-scale:.8}}
+.editing [data-edit]{outline:2px dashed #FBBF24;outline-offset:4px;border-radius:6px;cursor:text;background:rgba(251,191,36,.08)}
+
+/* Compact mobile controls keep the content readable and the guide accessible. */
+@media (max-width:640px){
+  #welcomeOverlay{overflow-y:auto;align-items:flex-start;padding:12px}
+  #welcomeOverlay > .relative{margin:auto;max-height:calc(100dvh - 24px);overflow-y:auto}
+  #guideWidget{bottom:12px;right:12px;max-width:calc(100vw - 24px);width:auto}
+  #guideWidget > button.group{height:58px;width:58px;border-radius:999px;border:2px solid rgba(255,255,255,.5);background:linear-gradient(135deg,#22D3EE,#8B5CF6);box-shadow:0 6px 26px rgba(0,0,0,.4);display:flex;justify-content:center;align-items:center}
+  #guideWidget > button.group::after{content:"🤖";font-size:29px}
+  #guideWidget > button.group .boy-fig,#guidePing{display:none!important}
+  #guideBubble{width:min(310px,calc(100vw - 24px))}
+  [role="toolbar"]{top:auto!important;bottom:10px!important;left:10px!important;transform:none!important;flex-direction:row!important;padding:4px!important;gap:4px!important;opacity:.86}
+  [role="toolbar"] button{width:31px;height:34px;font-size:12px}
+}
+/* Additional refinements preserved from the original interactive portfolio. */
+.faq-item.open .faq-answer{max-height:650px}
+.tab-btn.active{background:linear-gradient(90deg,#22D3EE,#8B5CF6);color:#05071A;border-color:transparent}
+.notebook-cell{border-left:3px solid #22D3EE}
+.star-bar{transition:width 1.2s ease}
+@media(max-width:640px){#guideWidget{transform:scale(.78);transform-origin:right bottom;right:0!important;bottom:0!important}#guideBubble{max-width:270px}#tourBar{top:76px}}
+</style>
+</head>
+<body class="antialiased">
+<a href="#home" class="skip-link">Skip to main content</a>
+<canvas id="neuralBg" class="fixed inset-0 -z-10 opacity-60" aria-hidden="true"></canvas>
+<div class="fixed inset-0 -z-10 grid-bg pointer-events-none"></div>
+<div class="fixed inset-0 -z-10 pointer-events-none" style="background:radial-gradient(700px 400px at 15% 10%,rgba(139,92,246,.25),transparent),radial-gradient(700px 400px at 90% 20%,rgba(34,211,238,.18),transparent),radial-gradient(600px 500px at 50% 100%,rgba(244,114,182,.12),transparent)"></div>
+
+<!-- Progress -->
+<div class="fixed top-0 left-0 right-0 h-1.5 bg-white/10 z-[120]"><div id="progressBar" class="h-full w-0 bg-gradient-to-r from-cyan-400 via-violet-500 to-pink-500"></div></div>
+
+<!-- Accessibility Toolbar -->
+<div class="fixed left-3 top-1/2 -translate-y-1/2 z-[90] flex flex-col gap-2 glass rounded-2xl p-2 shadow-2xl" role="toolbar" aria-label="Accessibility tools">
+<button onclick="toggleFontSize()" title="Increase text size" aria-label="Increase text size" class="w-10 h-10 rounded-xl bg-white/10 hover:bg-cyan-400 hover:text-black transition font-bold">A+</button>
+<button onclick="toggleContrast()" title="High contrast" aria-label="Toggle high contrast" class="w-10 h-10 rounded-xl bg-white/10 hover:bg-cyan-400 hover:text-black transition">◐</button>
+<button onclick="toggleMotion()" title="Reduce motion" aria-label="Toggle reduce motion" class="w-10 h-10 rounded-xl bg-white/10 hover:bg-cyan-400 hover:text-black transition">⏸</button>
+<button onclick="toggleVoice()" id="voiceBtn" title="Guide voice on/off" aria-label="Toggle guide voice" class="w-10 h-10 rounded-xl bg-white/10 hover:bg-cyan-400 hover:text-black transition">🔉</button>
+<button onclick="restartTour()" title="Restart guide tour" aria-label="Restart guide tour" class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-400 to-violet-500 text-black hover:scale-110 transition">🧭</button>
+</div>
+
+<!-- NAV -->
+<nav class="fixed top-1.5 left-0 right-0 z-[80] px-3 sm:px-6" aria-label="Main navigation">
+<div class="max-w-7xl mx-auto glass rounded-2xl mt-2 px-4 py-3 flex items-center justify-between shadow-xl">
+<a href="#home" class="flex items-center gap-3 group">
+<span class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-400 to-violet-600 flex items-center justify-center text-black font-black text-lg border-2 border-white/20 group-hover:rotate-12 transition">S</span>
+<span class="leading-tight"><span class="block font-display font-700 font-bold tracking-wide">SRIDHAR <span class="text-cyan-300 text-xs align-top border border-cyan-400/40 px-1.5 py-0.5 rounded-full ml-1">NLP</span></span><span class="block text-[11px] text-slate-400 tracking-[.2em] uppercase">Learning Portfolio</span></span>
+</a>
+<div class="hidden lg:flex items-center gap-1 text-sm font-medium">
+<a href="#interactions" class="px-3 py-2 rounded-lg hover:bg-white/10 hover:text-cyan-300 transition">Class</a>
+<a href="#questions" class="px-3 py-2 rounded-lg hover:bg-white/10 hover:text-cyan-300 transition">Q&A</a>
+<a href="#stars" class="px-3 py-2 rounded-lg hover:bg-white/10 hover:text-cyan-300 transition">Stars</a>
+<a href="#whatsapp" class="px-3 py-2 rounded-lg hover:bg-white/10 hover:text-cyan-300 transition">WhatsApp</a>
+<a href="#notebooks" class="px-3 py-2 rounded-lg hover:bg-white/10 hover:text-cyan-300 transition">Notebooks</a>
+<a href="#assignments" class="px-3 py-2 rounded-lg hover:bg-white/10 hover:text-cyan-300 transition">Assignments</a>
+<a href="#projects" class="px-3 py-2 rounded-lg hover:bg-white/10 hover:text-cyan-300 transition">Project</a>
+<a href="#casestudy" class="px-3 py-2 rounded-lg hover:bg-white/10 hover:text-cyan-300 transition">Case Study</a>
+</div>
+<div class="flex items-center gap-2">
+<button onclick="toggleEditMode()" id="editBtn" class="hidden sm:flex items-center gap-2 text-xs font-bold px-3 py-2 rounded-xl border border-amber-300/40 text-amber-300 hover:bg-amber-300 hover:text-black transition"><i class="fa-solid fa-pen"></i> PREVIEW EDIT</button>
+<button onclick="restartTour()" class="hidden sm:flex items-center gap-2 text-xs font-bold px-4 py-2 rounded-xl bg-gradient-to-r from-cyan-400 to-violet-500 text-black btn-glow"><i class="fa-solid fa-wand-magic-sparkles"></i> GUIDE ME</button>
+<button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="lg:hidden w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-xl" aria-label="Open menu"><span aria-hidden="true">☰</span></button>
+</div>
+</div>
+<div id="mobileMenu" class="hidden max-w-7xl mx-auto glass rounded-2xl mt-2 p-4 lg:hidden">
+<div class="grid grid-cols-2 gap-2 text-sm font-semibold">
+<a href="#interactions" class="p-3 rounded-xl bg-white/5">📚 Class</a><a href="#questions" class="p-3 rounded-xl bg-white/5">💬 Q&A</a><a href="#stars" class="p-3 rounded-xl bg-white/5">⭐ Stars</a><a href="#whatsapp" class="p-3 rounded-xl bg-white/5">📱 WhatsApp</a><a href="#notebooks" class="p-3 rounded-xl bg-white/5">📓 Notebooks</a><a href="#assignments" class="p-3 rounded-xl bg-white/5">📝 Assignments</a><a href="#projects" class="p-3 rounded-xl bg-white/5">🛡️ Project</a><a href="#casestudy" class="p-3 rounded-xl bg-white/5">🔬 Case Study</a>
+</div>
+<button onclick="restartTour()" class="mt-3 w-full py-3 rounded-xl bg-gradient-to-r from-cyan-400 to-violet-500 text-black font-bold">Start Guided Tour with Buddy</button>
+</div>
+</nav>
+
+<!-- WELCOME OVERLAY -->
+<div id="welcomeOverlay" class="fixed inset-0 z-[110] flex items-center justify-center p-4 bg-[#05071A]/85 backdrop-blur-xl">
+<div class="absolute inset-0 overflow-hidden pointer-events-none"><div class="absolute -top-20 -left-20 w-96 h-96 bg-violet-600/30 rounded-full blur-[100px]"></div><div class="absolute bottom-0 right-0 w-96 h-96 bg-cyan-400/20 rounded-full blur-[100px]"></div></div>
+<div class="relative max-w-4xl w-full glass rounded-[28px] border-2 border-white/10 overflow-hidden shadow-2xl">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-cyan-400 via-violet-500 to-pink-500"></div>
+<div class="grid md:grid-cols-[320px_1fr]">
+<div class="bg-gradient-to-b from-violet-600/30 to-cyan-400/10 p-6 flex flex-col items-center justify-center relative overflow-hidden">
+<div class="absolute top-4 left-4 text-xs font-mono bg-black/50 px-3 py-1 rounded-full border border-white/20">🤖 BUDDY v2.0 • ONLINE</div>
+<!-- BOY LARGE -->
+<div class="boy-fig float-anim mt-6 talking" id="welcomeBoy" style="--boy-scale:1.05" aria-hidden="true">
+<div class="boy-shadow"></div>
+<div class="boy-legs"><div class="boy-leg"></div><div class="boy-leg"></div></div>
+<div class="boy-body"><div class="boy-logo">NLP</div><div class="boy-string l"></div><div class="boy-string r"></div><div class="boy-pocket"></div><div class="boy-arm left"><div class="boy-hand"></div></div><div class="boy-arm right"><div class="boy-hand"></div></div></div>
+<div class="boy-head-wrap"><div class="boy-ear l"></div><div class="boy-ear r"></div><div class="boy-head"><div class="boy-hair"><div class="boy-hair-shine"></div></div><div class="boy-cap-badge">⭐</div><div class="boy-eyes"><div class="eye"><div class="pupil"></div></div><div class="eye"><div class="pupil"></div></div></div><div class="boy-glasses"><div class="glass-l"></div><div class="glass-r"></div></div><div class="boy-blush l"></div><div class="boy-blush r"></div><div class="boy-mouth"></div></div></div>
+</div>
+<div class="mt-2 font-hand text-2xl text-cyan-300 -rotate-3">Hey! I'm Buddy! 👋</div>
+<div class="text-xs text-slate-400 font-mono mt-1">Your NLP Portfolio Guide</div>
+</div>
+<div class="p-6 sm:p-10">
+<div class="inline-flex items-center gap-2 text-[11px] font-bold tracking-widest uppercase bg-gradient-to-r from-cyan-400/20 to-violet-500/20 border border-cyan-400/30 text-cyan-300 px-3 py-1.5 rounded-full"><span class="w-2 h-2 bg-lime-400 rounded-full animate-ping"></span> Welcome to Sridhar's World of NLP</div>
+<h1 class="font-display text-3xl sm:text-5xl font-bold mt-4 leading-tight">Vanakkam! I'm <span class="grad-text">BUDDY</span> —<br/>Sridhar's Cartoon Guide.</h1>
+<div class="speech mt-5"><p id="welcomeTyped" class="font-medium text-[15px] leading-relaxed min-h-[72px]"></p><div class="typing-dots mt-1" id="welcomeDots"><span></span><span></span><span></span></div></div>
+<div class="grid sm:grid-cols-2 gap-3 mt-6">
+<button onclick="startTour()" class="btn-glow group bg-gradient-to-r from-cyan-400 to-violet-500 text-black font-bold rounded-2xl px-6 py-4 flex items-center justify-center gap-2 hover:scale-[1.02] transition shadow-lg shadow-violet-500/30"><i class="fa-solid fa-play group-hover:scale-125 transition"></i> START GUIDED TOUR <span class="text-xs bg-black/20 px-2 py-1 rounded-full">2 min</span></button>
+<button onclick="exploreFreely()" class="rounded-2xl px-6 py-4 border-2 border-white/20 font-bold hover:border-cyan-400 hover:text-cyan-300 hover:bg-cyan-400/10 transition flex items-center justify-center gap-2"><i class="fa-solid fa-compass"></i> EXPLORE FREELY</button>
+</div>
+<div class="flex flex-wrap items-center gap-4 mt-5 text-xs text-slate-400">
+<span class="flex items-center gap-1.5"><i class="fa-solid fa-universal-access text-cyan-400"></i> Accessible to everyone</span>
+<span class="flex items-center gap-1.5"><i class="fa-solid fa-mobile-screen text-cyan-400"></i> Mobile friendly</span>
+<span class="flex items-center gap-1.5"><i class="fa-solid fa-volume-high text-cyan-400"></i> Voice guide available</span>
+<label class="flex items-center gap-2 ml-auto cursor-pointer"><input type="checkbox" id="voiceCheck" checked class="accent-cyan-400 w-4 h-4"/> Buddy voice</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Tour top bar -->
+<div id="tourBar" class="hidden fixed top-20 left-1/2 -translate-x-1/2 z-[95] glass rounded-full pl-5 pr-2 py-2 flex items-center gap-3 border border-cyan-400/40 shadow-2xl max-w-[95vw]">
+<span class="text-xs font-bold text-cyan-300 whitespace-nowrap"><span id="tourStepNum">1</span>/9 • <span id="tourStepName">Home</span></span>
+<div class="w-24 sm:w-40 h-2 bg-white/10 rounded-full overflow-hidden"><div id="tourProgress" class="h-full bg-gradient-to-r from-cyan-400 to-violet-500 rounded-full" style="width:14%"></div></div>
+<button onclick="tourNext()" class="text-xs font-bold bg-white text-black px-4 py-2 rounded-full hover:bg-cyan-300 transition">NEXT <i class="fa-solid fa-arrow-right ml-1"></i></button>
+<button onclick="endTour()" class="w-8 h-8 rounded-full bg-white/10 hover:bg-red-500 transition" aria-label="End tour"><i class="fa-solid fa-xmark text-xs"></i></button>
+</div>
+<div id="tourBackdrop" class="hidden fixed inset-0 bg-black/70 backdrop-blur-[2px] z-[30]"></div>
+
+<main id="main">
+<!-- HERO -->
+<section id="home" class="pt-28 sm:pt-32 pb-10 px-3 sm:px-6 scroll-mt-24">
+<div class="max-w-7xl mx-auto grid lg:grid-cols-[1.15fr_.85fr] gap-6">
+<!-- Left -->
+<div class="reveal glass rounded-[28px] p-6 sm:p-10 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-cyan-400/20 to-violet-600/20 blur-[80px] rounded-full pointer-events-none"></div>
+<div class="flex flex-wrap items-center gap-2">
+<span class="text-[11px] font-bold tracking-widest bg-lime-400 text-black px-3 py-1.5 rounded-full uppercase">✦ NLP Subject Portfolio</span>
+<span class="text-[11px] font-mono bg-white/10 border border-white/15 px-3 py-1.5 rounded-full">📅 NLP Coursework</span>
+<span class="text-[11px] font-mono bg-white/10 border border-white/15 px-3 py-1.5 rounded-full flex items-center gap-1.5"><span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span> Learning in public</span>
+</div>
+<p class="mt-6 font-hand text-2xl text-amber-300 -rotate-1">Hello everyone, I am</p>
+<h2 class="font-display font-bold text-5xl sm:text-7xl tracking-tight leading-none mt-1" data-edit>SRIDHAR</h2>
+<p class="font-display text-xl sm:text-2xl mt-3 text-slate-300">Aspiring <span class="grad-text font-bold">NLP Engineer</span> • <span id="heroTyping" class="text-cyan-300 font-mono border-r-2 border-cyan-300 pr-1"></span></p>
+<p class="mt-4 text-slate-400 leading-relaxed max-w-xl" data-edit>Welcome to my NLP learning journey: DeepShield AI, word embeddings, Tamil language activities, Chinese biographical research, three Jupyter notebooks and the topics we explored as a learning community. Explore with <b class="text-white">Buddy</b>, my cartoon guide!</p>
+<div class="flex flex-wrap gap-3 mt-6">
+<button onclick="restartTour()" class="btn-glow bg-gradient-to-r from-cyan-400 to-violet-500 text-black font-bold px-6 py-3.5 rounded-2xl flex items-center gap-2"><i class="fa-solid fa-route"></i> Tour with Buddy</button>
+<a href="#notebooks" class="px-6 py-3.5 rounded-2xl border border-white/20 font-bold hover:bg-white hover:text-black transition flex items-center gap-2"><i class="fa-brands fa-python"></i> View Notebooks</a>
+<a href="#projects" class="px-6 py-3.5 rounded-2xl bg-white/10 font-bold hover:bg-white/20 transition flex items-center gap-2"><i class="fa-solid fa-shield-halved"></i> DeepShield AI</a>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-8">
+<div class="bg-white/5 border border-white/10 rounded-2xl p-4 text-center card-hover"><div class="font-display text-3xl font-bold text-cyan-300"><span class="counter" data-target="4">0</span></div><div class="text-[11px] uppercase tracking-widest text-slate-400 mt-1">Study themes</div></div>
+<div class="bg-white/5 border border-white/10 rounded-2xl p-4 text-center card-hover"><div class="font-display text-3xl font-bold text-violet-300"><span class="counter" data-target="3">0</span></div><div class="text-[11px] uppercase tracking-widest text-slate-400 mt-1">Assignments</div></div>
+<div class="bg-white/5 border border-white/10 rounded-2xl p-4 text-center card-hover"><div class="font-display text-3xl font-bold text-amber-300"><span class="counter" data-target="10">0</span>⭐</div><div class="text-[11px] uppercase tracking-widest text-slate-400 mt-1">Stars</div></div>
+<div class="bg-white/5 border border-white/10 rounded-2xl p-4 text-center card-hover"><div class="font-display text-3xl font-bold text-lime-300"><span class="counter" data-target="3">0</span></div><div class="text-[11px] uppercase tracking-widest text-slate-400 mt-1">Notebooks</div></div>
+</div>
+</div>
+<!-- Right: Photo + Playground -->
+<div class="flex flex-col gap-6">
+<div class="reveal glass rounded-[28px] p-6 relative overflow-hidden text-center">
+<div class="absolute inset-x-0 top-0 h-28 bg-gradient-to-r from-cyan-500 via-violet-500 to-pink-500 opacity-90"></div>
+<div class="absolute inset-x-0 top-0 h-28 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-30"></div>
+<div class="relative mt-10">
+<div class="relative inline-block group">
+<img id="profilePhoto" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgNDAwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzIyRDNFRSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzhCNUNGNiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIiByeD0iMjAwIiBmaWxsPSIjMTAxNjM0Ii8+PGNpcmNsZSBjeD0iMjAwIiBjeT0iMjAwIiByPSIxODAiIHN0cm9rZT0idXJsKCNnKSIgc3Ryb2tlLXdpZHRoPSIxMCIgZmlsbD0iIzE3MjE0YSIvPjxjaXJjbGUgY3g9IjIwMCIgY3k9IjE1NCIgcj0iNjgiIGZpbGw9IiM3Njg2YjkiLz48cGF0aCBkPSJNNzUgMzMyYzgtODYgNTktMTI3IDEyNS0xMjdzMTE3IDQxIDEyNSAxMjciIGZpbGw9IiM3Njg2YjkiLz48dGV4dCB4PSIyMDAiIHk9IjM3NCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIyMCIgZm9udC1mYW1pbHk9IkFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZXR0ZXItc3BhY2luZz0iNSIgZmlsbD0iI0UyRThGMCI+QUREIFBIT1RPPC90ZXh0Pjwvc3ZnPg==" data-public-photo="assets/profile.jpg" alt="Sridhar profile picture" class="w-36 h-36 rounded-full object-cover border-4 border-[#0B102F] ring-4 ring-cyan-400 shadow-2xl mx-auto"/>
+<span class="absolute bottom-2 right-2 w-8 h-8 bg-green-400 border-4 border-[#0B102F] rounded-full" title="Active"></span>
+<button onclick="document.getElementById('photoInput').click()" class="absolute inset-0 rounded-full bg-black/60 opacity-0 group-hover:opacity-100 transition flex flex-col items-center justify-center text-xs font-bold gap-1"><i class="fa-solid fa-camera text-2xl"></i> CHANGE<br/>PHOTO</button>
+</div>
+<input type="file" id="photoInput" accept="image/*" class="hidden" aria-label="Upload your photo"/>
+<h3 class="font-display text-2xl font-bold mt-3" data-edit>SRIDHAR</h3>
+<p class="text-cyan-300 font-mono text-sm" data-edit>NLP Learner • DeepShield AI Course Project</p>
+<p class="text-xs text-slate-400 mt-3 max-w-xs mx-auto">Your public photo can be published as <code class="text-cyan-300">assets/profile.jpg</code>. Browser uploads only change your own preview.</p>
+<button onclick="document.getElementById('photoInput').click()" class="mt-4 w-full py-3 rounded-xl border-2 border-dashed border-cyan-400/50 text-cyan-300 text-sm font-bold hover:bg-cyan-400 hover:text-black transition"><i class="fa-solid fa-upload mr-2"></i>PREVIEW YOUR PHOTO</button>
+<p class="text-[11px] text-slate-500 mt-2">Preview in this browser. To publish, add your photo to assets/profile.jpg and redeploy.</p>
+</div>
+</div>
+<!-- Mini NLP Playground -->
+<div class="reveal glass rounded-[28px] p-5 border border-violet-500/30">
+<div class="flex items-center justify-between"><h4 class="font-display font-bold flex items-center gap-2"><span class="w-8 h-8 rounded-lg bg-gradient-to-br from-lime-300 to-cyan-400 text-black flex items-center justify-center"><i class="fa-solid fa-flask text-sm"></i></span> Live NLP Playground</h4><span class="text-[10px] font-mono bg-lime-400/20 text-lime-300 px-2 py-1 rounded-full border border-lime-400/30">TRY ME • INTERACTIVE</span></div>
+<textarea id="nlpInput" rows="2" class="mt-3 w-full bg-black/40 border border-white/15 rounded-xl p-3 text-sm font-mono placeholder:text-slate-500" placeholder="Type a sentence... e.g. I absolutely loved the NLP class today!">I enjoyed learning about embeddings and morphology!</textarea>
+<button onclick="analyzeNLP()" class="mt-2 w-full py-2.5 rounded-xl bg-gradient-to-r from-lime-300 to-cyan-400 text-black font-bold text-sm btn-glow"><i class="fa-solid fa-wand-magic-sparkles mr-1"></i> TOKENIZE & ANALYZE</button>
+<div id="nlpOutput" class="mt-3 space-y-2 text-sm"><p class="text-slate-500 text-xs text-center py-2">👆 Click Analyze to try a simple tokenization and keyword-sentiment illustration.</p></div>
+</div>
+</div>
+</div>
+<!-- Marquee -->
+<div class="max-w-7xl mx-auto mt-6 overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-r from-violet-600/20 via-cyan-400/10 to-pink-500/20 py-3">
+<div class="marquee-track gap-8 text-sm font-display font-bold tracking-widest whitespace-nowrap px-4">
+<span class="flex gap-8"><span>TOKENIZATION ✦</span><span>SENTIMENT ANALYSIS ✦</span><span>NAMED ENTITY RECOGNITION ✦</span><span>TRANSFORMERS ✦</span><span>BERT ✦</span><span>TF-IDF ✦</span><span>WORD2VEC ✦</span><span>CHATBOTS ✦</span></span>
+<span class="flex gap-8"><span>TOKENIZATION ✦</span><span>SENTIMENT ANALYSIS ✦</span><span>NAMED ENTITY RECOGNITION ✦</span><span>TRANSFORMERS ✦</span><span>BERT ✦</span><span>TF-IDF ✦</span><span>WORD2VEC ✦</span><span>CHATBOTS ✦</span></span>
+</div>
+</div>
+</section>
+
+<!-- CLASS INTERACTIONS -->
+<section id="interactions" class="px-3 sm:px-6 py-10 scroll-mt-24">
+<div class="max-w-7xl mx-auto glass rounded-[28px] p-6 sm:p-10">
+<div class="reveal flex flex-col sm:flex-row sm:items-end justify-between gap-4"><div><p class="font-mono text-cyan-300 text-sm">01 • CLASSROOM & COLLABORATION</p><h2 class="font-display text-3xl sm:text-5xl font-bold mt-2">My NLP <span class="grad-text">Learning Journey</span></h2><p class="text-slate-400 mt-2 max-w-2xl">The topics behind my class interactions, study-group conversations, assignments and project review.</p></div><div class="flex flex-wrap gap-2"><button onclick="filterTimeline('all',this)" class="tl-filter px-4 py-2 rounded-full text-xs font-bold bg-cyan-400 text-black">ALL</button><button onclick="filterTimeline('discussion',this)" class="tl-filter px-4 py-2 rounded-full text-xs font-bold bg-white/10">DISCUSSION</button><button onclick="filterTimeline('lab',this)" class="tl-filter px-4 py-2 rounded-full text-xs font-bold bg-white/10">LAB</button><button onclick="filterTimeline('project',this)" class="tl-filter px-4 py-2 rounded-full text-xs font-bold bg-white/10">PROJECT</button></div></div>
+<div id="timelineList" class="grid md:grid-cols-2 gap-4 mt-8">
+<article class="tl-item reveal bg-white/5 border border-white/10 rounded-2xl p-5 card-hover" data-type="discussion"><div class="text-3xl">🧩</div><p class="text-xs font-mono mt-3 text-cyan-300">MORPHOLOGY • DISCUSSION</p><h3 class="font-display text-xl font-bold mt-2">Breaking Words Apart</h3><p class="text-slate-400 text-sm mt-2">Morphology interactions: roots, affixes, inflection and how word structure affects tokenization and understanding.</p></article>
+<article class="tl-item reveal bg-white/5 border border-white/10 rounded-2xl p-5 card-hover" data-type="lab"><div class="text-3xl">📓</div><p class="text-xs font-mono mt-3 text-lime-300">BROWN CORPUS • PRACTICE</p><h3 class="font-display text-xl font-bold mt-2">Learning with Notebooks</h3><p class="text-slate-400 text-sm mt-2">Brown Corpus exploration and Practice Doc 1 & 2 form the notebook portion of this learning record.</p><a href="#notebooks" class="inline-block text-cyan-300 text-sm font-bold mt-3">Explore the three notebooks →</a></article>
+<article class="tl-item reveal bg-white/5 border border-white/10 rounded-2xl p-5 card-hover" data-type="discussion"><div class="text-3xl">🌐</div><p class="text-xs font-mono mt-3 text-pink-300">LANGUAGES • DISCUSSION</p><h3 class="font-display text-xl font-bold mt-2">Translation & Chinese Biography</h3><p class="text-slate-400 text-sm mt-2">LLM translation analysis, Tamil language activity and Chinese biographical analysis and research.</p><a href="#assignments" class="inline-block text-cyan-300 text-sm font-bold mt-3">View assignments →</a></article>
+<article class="tl-item reveal bg-white/5 border border-white/10 rounded-2xl p-5 card-hover" data-type="project"><div class="text-3xl">🛡️</div><p class="text-xs font-mono mt-3 text-amber-300">DEEPSHIELD AI • PROJECT REVIEW</p><h3 class="font-display text-xl font-bold mt-2">From Idea to System Architecture</h3><p class="text-slate-400 text-sm mt-2">Project Q&A and review centered on spectrogram analysis, transcript verification and evidence fusion for deepfake audio detection.</p><a href="#projects" class="inline-block text-cyan-300 text-sm font-bold mt-3">See the system design →</a></article>
+</div></div></section>
+
+<!-- QUESTIONS -->
+<section id="questions" class="px-3 sm:px-6 py-4 scroll-mt-24">
+<div class="max-w-7xl mx-auto glass rounded-[28px] p-6 sm:p-10 border-t-4 !border-t-violet-500">
+<div class="reveal flex flex-col md:flex-row md:items-end justify-between gap-4"><div><p class="font-mono text-violet-300 text-sm">02 • QUESTIONS & CONCEPTS</p><h2 class="font-display text-3xl sm:text-5xl font-bold mt-2">NLP <span class="grad-text">Questions Explored</span></h2><p class="text-sm text-slate-400 mt-2">Concept explanations for the topics studied; not verbatim transcripts of classroom questions.</p></div><label class="relative"><span class="sr-only">Search NLP questions</span><input id="qaSearch" oninput="filterQA()" placeholder="Search topics..." class="w-full md:w-64 bg-black/40 border border-white/15 rounded-xl px-4 py-3 text-sm"/></label></div>
+<div class="grid md:grid-cols-2 gap-4 mt-6" id="qaGrid">
+<article class="qa-card bg-white/5 border border-white/10 rounded-2xl p-5" data-q="morphology word roots affixes"><p class="text-cyan-300 text-xs font-mono">MORPHOLOGY</p><h3 class="font-bold text-lg mt-2">How does morphology help NLP?</h3><p class="text-sm text-slate-400 mt-2">It studies how words are formed from meaningful units such as roots and affixes, supporting preprocessing and morphological analysis.</p></article>
+<article class="qa-card bg-white/5 border border-white/10 rounded-2xl p-5" data-q="whisper speech transcription detector"><p class="text-violet-300 text-xs font-mono">DEEPSHIELD AI</p><h3 class="font-bold text-lg mt-2">Does Whisper detect deepfakes?</h3><p class="text-sm text-slate-400 mt-2">No. Whisper transcribes speech; acoustic and linguistic evidence is assessed separately before the decision-fusion step.</p></article>
+<article class="qa-card bg-white/5 border border-white/10 rounded-2xl p-5" data-q="embeddings vectors regional languages"><p class="text-lime-300 text-xs font-mono">WORD EMBEDDINGS</p><h3 class="font-bold text-lg mt-2">Why turn words into vectors?</h3><p class="text-sm text-slate-400 mt-2">Embeddings map text to numerical representations, allowing models to compare relationships and semantic similarity. Multilingual embeddings can support Indian languages.</p></article>
+<article class="qa-card bg-white/5 border border-white/10 rounded-2xl p-5" data-q="project review audio spectrogram fusion"><p class="text-amber-300 text-xs font-mono">PROJECT REVIEW</p><h3 class="font-bold text-lg mt-2">Why combine acoustic and linguistic signals?</h3><p class="text-sm text-slate-400 mt-2">The channels capture different types of evidence. Combining available signals can provide richer explanations, but requires careful validation and uncertainty handling.</p></article>
+</div><p id="qaEmpty" class="hidden text-center text-slate-500 mt-6">No matching study topic.</p>
+</div></section>
+
+<!-- STARS -->
+<section id="stars" class="px-3 sm:px-6 py-10 scroll-mt-24"><div class="max-w-7xl mx-auto glass rounded-[28px] p-6 sm:p-10 relative overflow-hidden"><div class="absolute right-0 top-0 w-72 h-72 rounded-full bg-amber-400/10 blur-3xl pointer-events-none"></div><p class="reveal font-mono text-amber-300 text-sm">03 • REPORTED COURSE STAR BREAKDOWN</p><h2 class="reveal font-display text-3xl sm:text-5xl font-bold mt-2">My <span class="text-amber-300">⭐ 10 Stars</span></h2><div class="grid lg:grid-cols-[.8fr_1.6fr] gap-6 mt-8"><div class="reveal bg-gradient-to-b from-amber-400/15 to-transparent border border-amber-300/30 rounded-3xl p-6 text-center"><div class="relative w-44 h-44 mx-auto"><svg viewBox="0 0 120 120" class="w-full h-full -rotate-90" role="img" aria-label="10 stars earned"><circle cx="60" cy="60" r="52" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="10"/><circle cx="60" cy="60" r="52" fill="none" stroke="#FBBF24" stroke-width="10" stroke-linecap="round" stroke-dasharray="326" stroke-dashoffset="0"/></svg><div class="absolute inset-0 flex flex-col items-center justify-center"><span class="text-4xl">⭐</span><span id="starTotal" class="font-display text-5xl font-bold">10</span><span class="text-xs tracking-wider text-slate-400">EARNED IN TOTAL</span></div></div><p class="mt-3 font-bold text-amber-300">4 + 4 + 2 = 10</p><p class="text-xs text-slate-400 mt-1">Based on the course activities supplied.</p><button onclick="celebrateStars()" class="mt-4 w-full py-3 rounded-xl bg-gradient-to-r from-amber-300 to-orange-400 text-black font-bold btn-glow text-sm">✨ Celebrate 10 Stars</button></div><div class="reveal space-y-4"><div class="bg-white/5 rounded-2xl border border-white/10 p-5"><div class="flex items-center justify-between gap-2"><div><p class="text-xs font-mono text-cyan-300">ANALYSIS</p><h3 class="font-bold mt-1">LLM Translation Analysis</h3></div><span class="text-amber-300 font-display text-2xl font-bold">4 ⭐</span></div><div class="h-2 bg-black/40 rounded-full mt-3"><div class="h-full w-[40%] bg-cyan-400 rounded-full"></div></div></div><div class="bg-white/5 rounded-2xl border border-white/10 p-5"><div class="flex items-center justify-between gap-2"><div><p class="text-xs font-mono text-violet-300">RESEARCH</p><h3 class="font-bold mt-1">Chinese Biographical Analysis</h3></div><span class="text-amber-300 font-display text-2xl font-bold">4 ⭐</span></div><div class="h-2 bg-black/40 rounded-full mt-3"><div class="h-full w-[40%] bg-violet-400 rounded-full"></div></div></div><div class="bg-white/5 rounded-2xl border border-white/10 p-5"><div class="flex items-center justify-between gap-2"><div><p class="text-xs font-mono text-lime-300">CLASSROOM Q&A</p><h3 class="font-bold mt-1">Project Review Questions & Answers</h3></div><span class="text-amber-300 font-display text-2xl font-bold">2 ⭐</span></div><div class="h-2 bg-black/40 rounded-full mt-3"><div class="h-full w-[20%] bg-lime-400 rounded-full"></div></div></div></div></div></div></section>
+
+<!-- WHATSAPP -->
+<section id="whatsapp" class="px-3 sm:px-6 py-4 scroll-mt-24"><div class="max-w-7xl mx-auto glass rounded-[28px] p-6 sm:p-10"><div class="reveal"><p class="font-mono text-green-300 text-sm">04 • STUDY GROUP PARTICIPATION</p><h2 class="font-display text-3xl sm:text-5xl font-bold mt-2">WhatsApp <span class="text-green-400">Learning Hub</span></h2><p class="text-slate-400 mt-2 max-w-3xl">Study-group topics included morphology interactions, project interactions, Chinese biographical discussions, and sharing or discussing notebooks. The phone below is an <b class="text-slate-200">illustrative, local demo</b>—not a real WhatsApp connection or a claimed chat transcript.</p></div><div class="grid lg:grid-cols-[420px_1fr] gap-6 mt-8"><div class="reveal w-full max-w-[420px] mx-auto"><div class="bg-[#0B141A] rounded-[28px] overflow-hidden border-4 border-black shadow-2xl"><div class="bg-[#1F2C34] px-4 py-3 flex items-center gap-3"><span class="flex items-center justify-center w-12 h-12 bg-green-500/20 text-green-300 rounded-full text-2xl">💬</span><div><p class="font-bold">NLP Study Group • Demo</p><p class="text-xs text-slate-400">Topics and practice conversation</p></div></div><div class="text-xs text-center p-2 text-amber-200 bg-amber-400/10">SIMULATED CONVERSATION — not live WhatsApp</div><div id="waChat" class="h-[330px] overflow-y-auto p-3 space-y-3 text-sm" aria-live="polite"></div><div class="px-3 pb-2 flex flex-wrap gap-2"><button onclick="waQuick('morphology')" class="text-xs rounded-full bg-[#1F2C34] px-3 py-2">Morphology</button><button onclick="waQuick('DeepShield')" class="text-xs rounded-full bg-[#1F2C34] px-3 py-2">Project</button><button onclick="waQuick('Chinese biography')" class="text-xs rounded-full bg-[#1F2C34] px-3 py-2">Biography</button><button onclick="waQuick('notebooks')" class="text-xs rounded-full bg-[#1F2C34] px-3 py-2">Notebooks</button></div><div class="bg-[#1F2C34] p-3 flex gap-2"><input id="waInput" onkeydown="if(event.key==='Enter')sendWA()" placeholder="Ask about a study topic" class="min-w-0 flex-1 bg-[#2A3942] rounded-full px-4 py-2 text-sm" aria-label="Demo chat message"/><button onclick="sendWA()" class="w-10 h-10 rounded-full bg-[#00A884]" aria-label="Send demo message">➤</button></div></div></div><div class="reveal grid sm:grid-cols-2 gap-4 content-start"><article class="bg-green-500/10 border border-green-500/20 p-5 rounded-2xl card-hover"><p class="text-3xl">🧩</p><h3 class="font-bold mt-3">Morphology Interactions</h3><p class="text-sm text-slate-400 mt-2">Word formation, root words, affixes and morphological analysis.</p></article><article class="bg-white/5 border border-white/10 p-5 rounded-2xl card-hover"><p class="text-3xl">🛡️</p><h3 class="font-bold mt-3">DeepShield Project</h3><p class="text-sm text-slate-400 mt-2">Project design, architecture, evidence fusion and review Q&A.</p></article><article class="bg-white/5 border border-white/10 p-5 rounded-2xl card-hover"><p class="text-3xl">🌏</p><h3 class="font-bold mt-3">Chinese Biography Discussion</h3><p class="text-sm text-slate-400 mt-2">Research notes and multilingual language analysis conversations.</p></article><article class="bg-white/5 border border-white/10 p-5 rounded-2xl card-hover"><p class="text-3xl">📓</p><h3 class="font-bold mt-3">Notebooks & Resources</h3><p class="text-sm text-slate-400 mt-2">Brown Corpus and practice-document learning material.</p></article></div></div></div></section>
+
+<!-- NOTEBOOKS -->
+<section id="notebooks" class="px-3 sm:px-6 py-10 scroll-mt-24"><div class="max-w-7xl mx-auto glass rounded-[28px] p-6 sm:p-10"><div class="reveal flex flex-wrap items-end justify-between gap-4"><div><p class="font-mono text-orange-300 text-sm">05 • THREE JUPYTER NOTEBOOKS</p><h2 class="font-display text-3xl sm:text-5xl font-bold mt-2">My Lab <span class="grad-text">Notebooks</span></h2><p class="text-slate-400 mt-2 max-w-2xl">Brown Corpus, Practice Doc 1 and Practice Doc 2. Original .ipynb files were not included in the website ZIP, so these are labeled notebook records, not invented results.</p></div><a href="#deploy" class="px-4 py-3 bg-orange-500/15 border border-orange-400/30 text-orange-200 rounded-xl text-sm font-bold">How to attach actual .ipynb files</a></div><div id="nbGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8"></div></div></section>
+
+<!-- ASSIGNMENTS -->
+
+<section id="assignments" class="px-3 sm:px-6 py-10 scroll-mt-24"><div class="max-w-7xl mx-auto glass rounded-[28px] p-6 sm:p-10"><div class="reveal"><p class="font-mono text-pink-300 text-sm">06 • COURSEWORK</p><h2 class="font-display text-3xl sm:text-5xl font-bold mt-2">Digital <span class="grad-text">Assignments</span></h2><p class="text-slate-400 mt-2">Three coursework themes connecting representation learning, Tamil language, and cross-cultural biographical research.</p></div><div class="grid md:grid-cols-3 gap-5 mt-8">
+<article class="reveal bg-white/5 border border-white/10 rounded-2xl p-6 card-hover flex flex-col"><div class="flex items-center justify-between"><span class="text-4xl">🔡</span><span class="text-[11px] font-mono text-cyan-300 bg-cyan-400/10 rounded-full px-3 py-1">VECTORS</span></div><p class="text-xs text-pink-300 font-mono mt-5">DIGITAL ASSIGNMENT</p><h3 class="text-xl font-display font-bold mt-2">Word Embeddings</h3><p class="text-sm text-slate-400 mt-3 flex-1">Investigating how embeddings represent words numerically and support NLP applications, including Indian regional languages.</p><div class="flex gap-2 flex-wrap mt-4"><span class="text-xs bg-white/10 px-3 py-1 rounded-full">NLP LEARNING NOTES</span><span class="text-xs bg-white/10 px-3 py-1 rounded-full">Tamil focus</span></div><button onclick="openAssignment('embeddings')" class="mt-5 py-3 bg-cyan-400 text-black rounded-xl font-bold text-sm">Open assignment →</button></article>
+<article class="reveal bg-white/5 border border-white/10 rounded-2xl p-6 card-hover flex flex-col"><div class="flex items-center justify-between"><span class="text-4xl">📜</span><span class="text-[11px] font-mono text-lime-300 bg-lime-400/10 rounded-full px-3 py-1">தமிழ்</span></div><p class="text-xs text-pink-300 font-mono mt-5">LANGUAGE ACTIVITY • DESK 05</p><h3 class="text-xl font-display font-bold mt-2">Tamil Poem & Proverbs</h3><p class="text-sm text-slate-400 mt-3 flex-1">Translating Bharathiyar's poem and sharing short motivational proverbs with meaning and reflection.</p><div class="flex gap-2 flex-wrap mt-4"><span class="text-xs bg-white/10 px-3 py-1 rounded-full">NLP LEARNING NOTES</span><span class="text-xs text-amber-300 bg-amber-400/10 px-3 py-1 rounded-full">⭐⭐⭐⭐⭐ 5/5</span></div><button onclick="openAssignment('tamil')" class="mt-5 py-3 bg-lime-300 text-black rounded-xl font-bold text-sm">Open assignment →</button></article>
+<article class="reveal bg-white/5 border border-white/10 rounded-2xl p-6 card-hover flex flex-col"><div class="flex items-center justify-between"><span class="text-4xl">🌏</span><span class="text-[11px] font-mono text-violet-300 bg-violet-400/10 rounded-full px-3 py-1">RESEARCH</span></div><p class="text-xs text-pink-300 font-mono mt-5">ASSIGNMENT 1 • RESEARCH</p><h3 class="text-xl font-display font-bold mt-2">Chinese Biographical Research</h3><p class="text-sm text-slate-400 mt-3 flex-1">Researching a Chinese biography, with attention to multilingual source interpretation and analysis.</p><div class="flex gap-2 flex-wrap mt-4"><span class="text-xs bg-white/10 px-3 py-1 rounded-full">BIOGRAPHICAL ANALYSIS</span><span class="text-xs bg-white/10 px-3 py-1 rounded-full">Language & research</span></div><button onclick="openAssignment('chinese')" class="mt-5 py-3 bg-violet-400 text-black rounded-xl font-bold text-sm">Open assignment →</button></article>
+</div></div></section>
+
+<!-- PROJECTS -->
+
+<section id="projects" class="px-3 sm:px-6 py-10 scroll-mt-24"><div class="max-w-7xl mx-auto glass rounded-[28px] overflow-hidden"><div class="bg-gradient-to-r from-cyan-700/80 via-violet-700/80 to-indigo-800 p-6 sm:p-10 relative"><div class="absolute top-0 right-0 w-72 h-72 rounded-full bg-cyan-300/15 blur-3xl"></div><div class="relative flex flex-col lg:flex-row items-start gap-6 justify-between"><div><p class="font-mono text-cyan-100 text-sm">07 • COURSE PROJECT • MULTIMODAL AUDIO ANALYSIS</p><h2 class="font-display text-4xl sm:text-6xl font-bold mt-2 text-white">DeepShield <span class="text-cyan-200">AI</span></h2><p class="text-lg sm:text-xl text-white/90 mt-3 max-w-2xl">Hybrid deepfake audio detection with spectrogram analysis and NLP-based transcript verification.</p><div class="flex flex-wrap gap-2 mt-5 text-xs font-bold"><span class="bg-black/30 rounded-full px-3 py-2">Audio forensics</span><span class="bg-black/30 rounded-full px-3 py-2">EfficientNet-B0</span><span class="bg-black/30 rounded-full px-3 py-2">Whisper tiny</span><span class="bg-black/30 rounded-full px-3 py-2">spaCy</span><span class="bg-black/30 rounded-full px-3 py-2">Sentence-Transformers</span></div></div><div class="shrink-0 p-5 rounded-3xl border border-white/25 bg-black/20 backdrop-blur text-7xl text-center" aria-hidden="true">🛡️<div class="text-sm mt-3 text-cyan-100 font-mono">EXPLAINABLE AI</div></div></div></div>
+<div class="p-6 sm:p-10"><p class="text-slate-300 leading-relaxed max-w-5xl">DeepShield AI analyzes audio through a <b class="text-white">128-bin log-Mel spectrogram</b> and <b class="text-white">EfficientNet-B0</b>, transcribes speech with <b class="text-white">Whisper tiny</b>, evaluates linguistic indicators with <b class="text-white">spaCy</b> and <b class="text-white">Sentence-Transformers</b>, and combines available evidence using a decision-fusion layer. The dashboard is designed to present the analysis in an explainable form.</p>
+<div class="bg-amber-400/10 border border-amber-300/30 rounded-xl p-4 mt-5 text-sm text-amber-100"><b>Important distinction:</b> Whisper is the speech-recognition component; it is <b>not</b> itself a deepfake detector. This portfolio illustrates system design. It does not execute the trained detection models in the browser.</div>
+<div class="mt-8"><h3 class="font-display text-2xl font-bold">System pipeline</h3><p class="text-sm text-slate-400 mt-1">Two evidence streams, then a fusion-and-explanation stage.</p><div class="grid md:grid-cols-5 gap-3 mt-5 items-stretch"><div class="bg-cyan-400/10 border border-cyan-400/30 p-4 rounded-2xl"><div class="text-3xl">🎙️</div><b class="block mt-3">1. Audio Input</b><p class="text-xs text-slate-400 mt-2">Upload, validate and preprocess audio</p></div><div class="bg-violet-400/10 border border-violet-400/30 p-4 rounded-2xl"><div class="text-3xl">🌊</div><b class="block mt-3">2. Acoustic Path</b><p class="text-xs text-slate-400 mt-2">128-bin log-Mel spectrogram → EfficientNet-B0</p></div><div class="bg-pink-400/10 border border-pink-400/30 p-4 rounded-2xl"><div class="text-3xl">📝</div><b class="block mt-3">3. Speech + NLP</b><p class="text-xs text-slate-400 mt-2">Whisper tiny → spaCy + Sentence-Transformers</p></div><div class="bg-lime-400/10 border border-lime-400/30 p-4 rounded-2xl"><div class="text-3xl">⚖️</div><b class="block mt-3">4. Evidence Fusion</b><p class="text-xs text-slate-400 mt-2">Combine available cues; reference-based style check if available</p></div><div class="bg-amber-400/10 border border-amber-400/30 p-4 rounded-2xl"><div class="text-3xl">🔎</div><b class="block mt-3">5. Explanation</b><p class="text-xs text-slate-400 mt-2">Show individual signals and decision rationale</p></div></div></div>
+<div class="grid lg:grid-cols-[1fr_.85fr] gap-6 mt-9"><div><h3 class="font-display text-2xl font-bold">Key learning points</h3><ul class="grid sm:grid-cols-2 gap-3 mt-4 text-sm"><li class="bg-white/5 p-4 rounded-xl border border-white/10">✓ Audio upload and preprocessing</li><li class="bg-white/5 p-4 rounded-xl border border-white/10">✓ 128-bin log-Mel spectrogram</li><li class="bg-white/5 p-4 rounded-xl border border-white/10">✓ EfficientNet-B0 acoustic analysis</li><li class="bg-white/5 p-4 rounded-xl border border-white/10">✓ Whisper tiny speech transcription</li><li class="bg-white/5 p-4 rounded-xl border border-white/10">✓ spaCy and Sentence-Transformers NLP analysis</li><li class="bg-white/5 p-4 rounded-xl border border-white/10">✓ Speaker-style consistency, if reference data is provided</li></ul></div><div class="bg-black/30 border border-cyan-400/20 rounded-2xl p-6"><div class="flex items-center gap-2"><span class="text-2xl">🎛️</span><h3 class="font-display text-xl font-bold">Explore the fusion logic</h3></div><p class="text-xs text-slate-400 mt-2">Select which evidence streams are available. This is a conceptual architecture interaction, <b>not</b> a live prediction.</p><div class="space-y-3 mt-5"><label class="flex items-center gap-3 text-sm"><input class="fusion-input accent-cyan-400 h-4 w-4" type="checkbox" value="acoustic" checked onchange="updateFusion()"/> Acoustic features (EfficientNet-B0)</label><label class="flex items-center gap-3 text-sm"><input class="fusion-input accent-pink-400 h-4 w-4" type="checkbox" value="linguistic" checked onchange="updateFusion()"/> Transcript linguistic indicators</label><label class="flex items-center gap-3 text-sm"><input class="fusion-input accent-lime-400 h-4 w-4" type="checkbox" value="speaker" onchange="updateFusion()"/> Speaker reference is available</label></div><div id="fusionResult" class="mt-5 rounded-xl p-4 bg-cyan-400/10 border border-cyan-400/20 text-sm" aria-live="polite"></div></div></div>
+</div></div></section>
+
+<section id="casestudy" class="px-3 sm:px-6 py-10 scroll-mt-24"><div class="max-w-7xl mx-auto glass rounded-[28px] overflow-hidden"><div class="bg-gradient-to-r from-indigo-700 via-violet-700 to-pink-700 p-6 sm:p-10"><p class="font-mono text-violet-100 text-sm">08 • CASE STUDY • COURSE RESEARCH BRIEF</p><h2 class="font-display text-3xl sm:text-5xl font-bold mt-2">How NLP <span class="text-cyan-200">Evolved</span></h2><p class="mt-3 text-white/85 max-w-3xl">Exploring the journey from NLP companies and university research laboratories to embeddings that power multilingual applications.</p></div><div class="p-6 sm:p-10">
+<div class="flex flex-wrap gap-2 pb-3 border-b border-white/10" role="tablist" aria-label="NLP case-study topics">
+<button class="tab-btn active px-5 py-2.5 rounded-full text-sm font-bold border border-white/15" onclick="caseTab('overview',this)" role="tab" aria-selected="true">Overview</button>
+<button class="tab-btn px-5 py-2.5 rounded-full text-sm font-bold border border-white/15" onclick="caseTab('startup',this)" role="tab" aria-selected="false">Startup</button>
+<button class="tab-btn px-5 py-2.5 rounded-full text-sm font-bold border border-white/15" onclick="caseTab('lab',this)" role="tab" aria-selected="false">University Lab</button>
+<button class="tab-btn px-5 py-2.5 rounded-full text-sm font-bold border border-white/15" onclick="caseTab('embeddings',this)" role="tab" aria-selected="false">Embeddings</button>
+</div>
+<div id="caseContent" class="my-5 min-h-[155px] bg-black/20 border border-white/10 rounded-2xl p-5" role="tabpanel" aria-live="polite"></div>
+<div class="grid md:grid-cols-3 gap-5"><article class="bg-white/5 border border-white/10 rounded-2xl p-6 card-hover flex flex-col"><div class="text-4xl">🚀</div><p class="text-xs font-mono text-cyan-300 mt-4">01 • INDUSTRY</p><h3 class="font-display font-bold text-xl mt-2">NLP Startup Study</h3><p class="text-sm text-slate-400 mt-3 flex-1">Investigate an Indian or international NLP startup earning more than ₹5 crore annually: its origins, founder, products, customers, tools and innovation.</p><button onclick="openCase('startup')" class="bg-cyan-400 text-black py-3 rounded-xl font-bold text-sm mt-5">Explore research brief →</button></article><article class="bg-white/5 border border-white/10 rounded-2xl p-6 card-hover flex flex-col"><div class="text-4xl">🎓</div><p class="text-xs font-mono text-violet-300 mt-4">02 • ACADEMIA</p><h3 class="font-display font-bold text-xl mt-2">European University NLP Lab</h3><p class="text-sm text-slate-400 mt-3 flex-1">Choose an NLP research lab at a European university and examine its strengths, research problems, scientists, papers and expected outcomes.</p><button onclick="openCase('lab')" class="bg-violet-400 text-black py-3 rounded-xl font-bold text-sm mt-5">Explore research brief →</button></article><article class="bg-white/5 border border-white/10 rounded-2xl p-6 card-hover flex flex-col"><div class="text-4xl">🧠</div><p class="text-xs font-mono text-lime-300 mt-4">03 • FOUNDATIONS</p><h3 class="font-display font-bold text-xl mt-2">Embeddings in NLP</h3><p class="text-sm text-slate-400 mt-3 flex-1">Study how embeddings are built, baseline methods, and the availability and capabilities of embeddings for Indian regional languages.</p><button onclick="openCase('embeddings')" class="bg-lime-300 text-black py-3 rounded-xl font-bold text-sm mt-5">Explore research brief →</button></article></div><p class="mt-6 text-sm text-slate-400 bg-black/30 border border-white/10 rounded-2xl p-4">These cards present the <b class="text-white">case-study questions</b> supplied for the course, not fabricated research findings. The selected startup, European lab, publications and demonstrated embedding outputs can be added after the actual research artifacts are provided.</p></div></div></section>
+
+<!-- DEPLOY -->
+<section id="deploy" class="px-3 sm:px-6 py-10">
+<div class="max-w-7xl mx-auto glass rounded-[28px] p-6 sm:p-10 border-2 border-dashed border-cyan-400/30">
+<div class="reveal grid lg:grid-cols-2 gap-8 items-center">
+<div>
+<p class="font-mono text-cyan-300 text-sm">09 • SHARE WITH EVERYONE • VERCEL READY</p>
+<h2 class="font-display text-3xl sm:text-4xl font-bold mt-2">Publish This Portfolio <span class="grad-text">on Vercel</span></h2>
+<p class="text-slate-400 mt-2 text-sm">This is a static portfolio; no backend is needed for pages, learning notes, assignments or conceptual demos. To publish, upload the ZIP contents to GitHub and import that repository into Vercel.</p>
+<ol class="mt-5 space-y-3 text-sm">
+<li class="flex gap-3 bg-white/5 rounded-xl p-3 border border-white/10"><span class="w-8 h-8 shrink-0 rounded-lg bg-cyan-400 text-black font-bold flex items-center justify-center">1</span><span><b>Upload <code>index.html</code> from the ZIP</b>. It contains its own styling, so the design works even if the optional assets are not uploaded.<br/><span class="text-xs text-cyan-300">For the public profile photo, place the real picture at assets/profile.jpg before deploying.</span></span></li>
+<li class="flex gap-3 bg-white/5 rounded-xl p-3 border border-white/10"><span class="w-8 h-8 shrink-0 rounded-lg bg-violet-500 text-white font-bold flex items-center justify-center">2</span><span><b>Push to GitHub</b> — create repo <code class="bg-black/50 px-1.5 py-0.5 rounded font-mono text-cyan-300">sridhar-nlp-portfolio</code>, upload the included <code>index.html</code> file and optionally the assets/notebooks folders.</span></li>
+<li class="flex gap-3 bg-white/5 rounded-xl p-3 border border-white/10"><span class="w-8 h-8 shrink-0 rounded-lg bg-black text-white font-bold flex items-center justify-center border border-white/20">▲</span><span><b>Import in Vercel</b> — vercel.com → New Project → Import repo → Deploy. Done! Share <code class="bg-black/50 px-1.5 py-0.5 rounded font-mono text-cyan-300">your-link.vercel.app</code></span></li>
+</ol>
+</div>
+<div class="reveal bg-black/40 border border-white/10 rounded-3xl p-6 text-center">
+<div class="w-24 h-24 mx-auto rounded-3xl bg-gradient-to-br from-black to-gray-900 border border-white/20 flex items-center justify-center text-5xl font-black">▲</div>
+<h3 class="font-display font-bold text-xl mt-4">Vercel Deployment</h3>
+<p class="text-xs text-slate-500 mt-1 font-mono">vercel.app • netlify.app • github.io — all supported</p>
+<div class="flex gap-2 mt-4">
+<a href="https://vercel.com/new" target="_blank" rel="noopener" class="flex-1 py-3 rounded-xl bg-white text-black font-bold text-sm hover:bg-cyan-300 transition">▲ Deploy to Vercel</a>
+<button onclick="copyLink()" class="flex-1 py-3 rounded-xl bg-white/10 font-bold text-sm hover:bg-white/20 transition"><i class="fa-solid fa-link"></i> Copy Guide</button>
+</div>
+<div class="mt-4 text-left text-xs bg-[#0B102F] rounded-xl p-4 border border-white/10 font-mono overflow-x-auto"><span class="text-slate-500"># Edit content in the source before deploying;</span><br/><span class="text-slate-500"># browser-only photo previews do not update the live site.</span><br/><span class="text-cyan-300">✓ Accessible</span> <span class="text-lime-300">✓ Responsive</span> <span class="text-amber-300">✓ Animated</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<footer class="px-3 sm:px-6 pb-28 sm:pb-10">
+<div class="max-w-7xl mx-auto glass rounded-[28px] p-6 sm:p-8 flex flex-col md:flex-row items-center gap-4 justify-between">
+<div class="flex items-center gap-3"><span class="w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan-400 to-violet-600 flex items-center justify-center font-black text-black text-xl">S</span><div><p class="font-display font-bold">SRIDHAR • NLP PORTFOLIO</p><p class="text-xs text-slate-500">Guided by Buddy 🤖 • Coursework & exploration • 2026</p></div></div>
+<div class="flex gap-2 text-sm"><a href="#home" class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white hover:text-black transition font-bold">↑ Top</a><button onclick="restartTour()" class="px-4 py-2 rounded-xl bg-gradient-to-r from-cyan-400 to-violet-500 text-black font-bold">Replay Tour</button></div>
+</div>
+<p class="text-center text-xs text-slate-600 mt-4">Static Vercel-ready NLP learning portfolio • Data is presented transparently</p>
+</footer>
+</main>
+
+<!-- GUIDE WIDGET (Small Buddy) -->
+<div id="guideWidget" class="hidden fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-[100] flex flex-col items-end gap-2 max-w-[320px]">
+<div id="guideBubble" class="speech w-full">
+<div class="flex items-center gap-2 mb-1"><span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span><span class="text-[10px] font-bold tracking-widest text-slate-500 uppercase">Buddy • Guide</span><button onclick="toggleGuideMute()" id="muteBtn" class="ml-auto text-slate-400 hover:text-black" aria-label="Mute voice"><i class="fa-solid fa-volume-high text-xs"></i></button></div>
+<p id="guideText" class="text-sm font-medium leading-snug min-h-[40px]">Hi! I'm here if you need me!</p>
+<div class="flex gap-2 mt-3">
+<button id="guideNextBtn" onclick="tourNext()" class="hidden flex-1 text-xs font-bold bg-black text-white py-2 rounded-xl hover:bg-gray-800 transition">Next →</button>
+<button onclick="document.getElementById('guideBubble').style.display='none'" class="text-xs font-bold bg-gray-100 px-3 py-2 rounded-xl hover:bg-gray-200 transition">Hide</button>
+<button onclick="restartTour()" class="text-xs font-bold bg-gradient-to-r from-cyan-400 to-violet-500 px-3 py-2 rounded-xl">Tour</button>
+</div>
+</div>
+<button onclick="toggleGuideBubble();boySay(pickTip())" class="relative group" aria-label="Talk to Buddy guide">
+<div class="boy-fig float-anim" id="miniBoy" style="--boy-scale:.52" aria-hidden="true">
+<div class="boy-shadow"></div>
+<div class="boy-legs"><div class="boy-leg"></div><div class="boy-leg"></div></div>
+<div class="boy-body"><div class="boy-logo">NLP</div><div class="boy-string l"></div><div class="boy-string r"></div><div class="boy-pocket"></div><div class="boy-arm left"><div class="boy-hand"></div></div><div class="boy-arm right"><div class="boy-hand"></div></div></div>
+<div class="boy-head-wrap"><div class="boy-ear l"></div><div class="boy-ear r"></div><div class="boy-head"><div class="boy-hair"><div class="boy-hair-shine"></div></div><div class="boy-cap-badge">⭐</div><div class="boy-eyes"><div class="eye"><div class="pupil"></div></div><div class="eye"><div class="pupil"></div></div></div><div class="boy-glasses"><div class="glass-l"></div><div class="glass-r"></div></div><div class="boy-blush l"></div><div class="boy-blush r"></div><div class="boy-mouth"></div></div></div>
+</div>
+<span class="absolute -top-1 -right-1 bg-red-500 text-white text-[10px] font-bold w-6 h-6 rounded-full flex items-center justify-center border-2 border-white animate-bounce" id="guidePing">1</span>
+</button>
+</div>
+
+<!-- DETAIL MODAL -->
+<div id="nbModal" class="hidden fixed inset-0 z-[110] bg-black/80 backdrop-blur-md flex items-center justify-center p-3 sm:p-6">
+<div class="w-full max-w-4xl glass rounded-3xl overflow-hidden max-h-[90vh] flex flex-col border border-orange-400/30">
+<div class="bg-gradient-to-r from-orange-500 to-pink-600 p-4 sm:p-5 flex items-center gap-3">
+<span class="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center text-2xl border border-white/30">📓</span>
+<div class="flex-1 min-w-0"><h3 id="nbTitle" class="font-display font-bold text-white text-lg truncate">Notebook</h3><p id="nbMeta" class="text-white/70 text-xs font-mono">Learning notes</p></div>
+<button id="runBtn" onclick="runNotebookDemo()" class="hidden sm:inline-block bg-white text-black text-xs font-bold px-4 py-2 rounded-xl hover:bg-lime-300 transition">▶ Run example</button>
+<button onclick="document.getElementById('nbModal').classList.add('hidden')" class="w-10 h-10 rounded-xl bg-black/30 text-white hover:bg-black/60 shrink-0" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+</div>
+<div id="nbBody" class="overflow-y-auto p-4 sm:p-6 space-y-4 flex-1"></div>
+</div>
+</div>
+
+<!-- ADD MODAL -->
+<div id="addModal" class="hidden fixed inset-0 z-[110] bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+<div class="w-full max-w-lg glass rounded-3xl p-6 border border-cyan-400/30">
+<h3 id="addTitle" class="font-display font-bold text-xl">Add Entry</h3>
+<p class="text-xs text-slate-400 mt-1">Draft additions preview in this browser only, not on the publicly deployed site.</p>
+<div class="space-y-3 mt-4">
+<input id="addField1" placeholder="Title / Question" class="w-full bg-black/40 border border-white/15 rounded-xl p-3 text-sm"/>
+<textarea id="addField2" rows="3" placeholder="Description / Answer" class="w-full bg-black/40 border border-white/15 rounded-xl p-3 text-sm"></textarea>
+<input id="addField3" placeholder="Tag (e.g. Week 8, +3 stars)" class="w-full bg-black/40 border border-white/15 rounded-xl p-3 text-sm"/>
+</div>
+<div class="flex gap-2 mt-4"><button onclick="submitAdd()" class="flex-1 py-3 rounded-xl bg-gradient-to-r from-cyan-400 to-violet-500 text-black font-bold">Add Now ✨</button><button onclick="document.getElementById('addModal').classList.add('hidden')" class="px-5 py-3 rounded-xl bg-white/10 font-bold">Cancel</button></div>
+</div>
+</div>
+
+<script>
+
+/* SRIDHAR portfolio - static, Vercel-compatible client interactions. */
+let tourIndex=-1, touring=false, voiceOn=false, guideMuted=false, editing=false;
+const $=(selector)=>document.querySelector(selector);
+const $$=(selector)=>Array.from(document.querySelectorAll(selector));
+function safeText(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function celebrate(){if(typeof confetti==='function')confetti({particleCount:60,spread:70,origin:{y:.7}});}
+
+/* Background canvas + reveal animations respect reduced-motion settings. */
+(function animateBackground(){const cv=$('#neuralBg');if(!cv||!cv.getContext)return;const ctx=cv.getContext('2d');if(!ctx)return;let pts=[];
+ function resize(){cv.width=window.innerWidth;cv.height=window.innerHeight;pts=Array.from({length:window.innerWidth<700?28:55},()=>({x:Math.random()*cv.width,y:Math.random()*cv.height,vx:(Math.random()-.5)*.3,vy:(Math.random()-.5)*.3}));}
+ resize();addEventListener('resize',resize);function frame(){ctx.clearRect(0,0,cv.width,cv.height);pts.forEach(p=>{p.x=(p.x+p.vx+cv.width)%cv.width;p.y=(p.y+p.vy+cv.height)%cv.height;ctx.beginPath();ctx.arc(p.x,p.y,1.5,0,Math.PI*2);ctx.fillStyle='rgba(34,211,238,.4)';ctx.fill();});requestAnimationFrame(frame);}if(!matchMedia('(prefers-reduced-motion: reduce)').matches)frame();})();
+(function reveal(){const nodes=$$('.reveal');if(typeof gsap!=='undefined'&&typeof ScrollTrigger!=='undefined'){gsap.registerPlugin(ScrollTrigger);nodes.forEach(el=>gsap.to(el,{opacity:1,y:0,duration:.65,ease:'power2.out',scrollTrigger:{trigger:el,start:'top 94%'}}));}else{nodes.forEach(el=>{el.style.opacity=1;el.style.transform='none';});}})();
+addEventListener('scroll',()=>{const h=document.documentElement;const denom=h.scrollHeight-h.clientHeight;$('#progressBar').style.width=(denom?100*h.scrollTop/denom:100)+'%';},{passive:true});
+(function counters(){const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(!e.isIntersecting)return;const node=e.target;const n=Number(node.dataset.target);node.textContent=String(n);obs.unobserve(node);}),{threshold:.2});$$('.counter').forEach(x=>obs.observe(x));})();
+const heroWords=['Morphology','Word Embeddings','Tamil NLP','DeepShield AI','Whisper & spaCy'];let wordIndex=0;
+let heroChar=0,heroBack=false;
+(function typeHero(){const el=$('#heroTyping');if(!el)return;const word=heroWords[wordIndex];el.textContent=word.slice(0,heroChar);if(!heroBack){heroChar++;if(heroChar>word.length){heroBack=true;setTimeout(typeHero,950);return;}}else{heroChar--;if(heroChar===0){heroBack=false;wordIndex=(wordIndex+1)%heroWords.length;}}setTimeout(typeHero,heroBack?45:85);})();
+const welcomeMessage="Welcome to SRIDHAR's NLP learning portfolio! I'm Buddy. Explore his ten stars, three notebooks, assignments, DeepShield AI and case-study briefs. Ready?";
+$('#welcomeTyped').textContent=welcomeMessage;$('#welcomeDots').style.display='none';
+function speak(t){if(!voiceOn||guideMuted||!('speechSynthesis'in window))return;try{speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(t);u.rate=1;u.pitch=1.1;speechSynthesis.speak(u);}catch(e){}}
+function toggleVoice(){voiceOn=!voiceOn;$('#voiceCheck').checked=voiceOn;$('#voiceBtn').setAttribute('aria-label',voiceOn?'Disable guide voice':'Enable guide voice');$('#voiceBtn').textContent=voiceOn?'🔉':'🔇';if(!voiceOn&&('speechSynthesis'in window))speechSynthesis.cancel();}
+function toggleGuideMute(){guideMuted=!guideMuted;$('#muteBtn').textContent=guideMuted?'🔇':'🔉';}
+$('#voiceCheck').checked=false;$('#voiceCheck').addEventListener('change',e=>{voiceOn=e.target.checked;if(!voiceOn&&('speechSynthesis'in window))speechSynthesis.cancel();});
+const tips=['Explore DeepShield AI’s two evidence streams and optional speaker reference.','The star total is 10: four for translation, four for biography and two for project Q&A.','Notebook originals are not attached yet—preview shows truthful descriptions.','The WhatsApp phone is an illustrative chat about the real discussion topics.','Case studies contain research briefs, not invented findings.'];
+function pickTip(){return tips[Math.floor(Math.random()*tips.length)];}
+function boySay(text){$('#guideWidget').classList.remove('hidden');$('#guideBubble').style.display='block';$('#guideText').textContent=text;$('#guidePing').style.display='none';speak(text);}
+function toggleGuideBubble(){const el=$('#guideBubble');el.style.display=el.style.display==='none'?'block':'none';}
+const steps=[
+{target:'#home',name:'Welcome',text:'Meet SRIDHAR and explore his NLP portfolio.'},
+{target:'#interactions',name:'Learning',text:'Four core study themes: morphology, notebooks, language research and project review.'},
+{target:'#questions',name:'Concepts',text:'Search the questions for explanations of morphology, embeddings and DeepShield.'},
+{target:'#stars',name:'Stars',text:'Ten earned stars, with the exact four, four and two breakdown.'},
+{target:'#whatsapp',name:'Group topics',text:'Explore an illustrative study chat about the WhatsApp learning topics.'},
+{target:'#notebooks',name:'Notebooks',text:'Brown Corpus, Practice Doc 1 and Practice Doc 2.'},
+{target:'#assignments',name:'Assignments',text:'Embeddings, Tamil Poem and Proverbs, and Chinese Biographical Research.'},
+{target:'#projects',name:'DeepShield AI',text:'Discover the audio, spectrogram, speech, NLP and evidence fusion pipeline.'},
+{target:'#casestudy',name:'Case study',text:'How NLP evolved through startups, laboratories and embedding technologies.'}];
+function clearHL(){$$('.tour-highlight').forEach(el=>el.classList.remove('tour-highlight'));}
+function startTour(){$('#welcomeOverlay').style.display='none';touring=true;tourIndex=-1;$('#guideWidget').classList.remove('hidden');$('#guideNextBtn').classList.remove('hidden');$('#tourBar').classList.remove('hidden');$('#tourBackdrop').classList.remove('hidden');tourNext();}
+function exploreFreely(){$('#welcomeOverlay').style.display='none';$('#guideWidget').classList.remove('hidden');$('#guideBubble').style.display='none';}
+function restartTour(){startTour();}
+function tourNext(){clearHL();tourIndex++;if(tourIndex>=steps.length){endTour();celebrate();boySay('Tour complete! Thanks for exploring SRIDHAR’s NLP learning journey.');return;}const s=steps[tourIndex],el=$(s.target);if(!el)return;el.classList.add('tour-highlight');el.scrollIntoView({behavior:'smooth',block:'center'});$('#tourStepNum').textContent=tourIndex+1;$('#tourStepName').textContent=s.name;$('#tourProgress').style.width=(100*(tourIndex+1)/steps.length)+'%';boySay(s.text);}
+function endTour(){touring=false;tourIndex=-1;clearHL();$('#tourBar').classList.add('hidden');$('#tourBackdrop').classList.add('hidden');$('#guideNextBtn').classList.add('hidden');}
+// Basic rule-based illustration: no NLP model or probability scoring is being claimed.
+function analyzeNLP(){const val=$('#nlpInput').value.trim();if(!val){$('#nlpOutput').textContent='Please type a sentence first.';return;}const tokens=val.match(/[\p{L}\p{N}]+(?:['’-][\p{L}\p{N}]+)?|[^\s]/gu)||[];const pos=new Set(['love','great','excellent','happy','good','amazing','loved']),neg=new Set(['bad','hate','awful','poor','terrible','sad']);let score=0;tokens.forEach(t=>{const w=t.toLowerCase();score+=(pos.has(w)?1:0)-(neg.has(w)?1:0);});const outcome=score>0?'Positive keywords found':score<0?'Negative keywords found':'No dictionary sentiment signal';$('#nlpOutput').innerHTML=`<p class="text-xs text-cyan-300 font-bold">Tokenization illustration (${tokens.length} tokens)</p><div class="flex flex-wrap gap-2 mt-2">${tokens.map(t=>`<span class="px-2 py-1 rounded bg-cyan-400/10 border border-cyan-400/20 font-mono text-xs">${safeText(t)}</span>`).join('')}</div><p class="mt-3 text-sm">${outcome} <span class="text-slate-500">(simple word-list demo, not a trained sentiment model)</span></p>`;}
+function filterTimeline(type,btn){$$('.tl-filter').forEach(x=>{x.classList.remove('bg-cyan-400','text-black');x.classList.add('bg-white/10');});btn.classList.add('bg-cyan-400','text-black');btn.classList.remove('bg-white/10');$$('.tl-item').forEach(el=>{el.style.display=type==='all'||el.dataset.type===type?'':'none';});}
+function filterQA(){const q=$('#qaSearch').value.trim().toLowerCase();let found=0;$$('.qa-card').forEach(el=>{const show=el.textContent.toLowerCase().includes(q);el.style.display=show?'':'none';if(show)found++;});$('#qaEmpty').classList.toggle('hidden',found>0);}
+// WhatsApp topic demo: no messaging API or imported real chat history.
+const chat=$('#waChat');
+const seed=[['Learning topic','How does morphology affect NLP preprocessing?'],['Study note','Roots, prefixes and suffixes help explain how words are structured.'],['Project topic','DeepShield AI uses acoustic features plus a Whisper transcript and NLP indicators.'],['Notebook topic','Brown Corpus, Practice Doc 1 and Practice Doc 2 are on the portfolio.']];
+function waMsg(name,text,me=false){const el=document.createElement('div');el.className=me?'flex justify-end':'flex justify-start';el.innerHTML=`<div class="max-w-[90%] rounded-2xl p-3 ${me?'bg-[#005C4B]':'bg-[#1F2C34]'}"><p class="text-[11px] font-bold ${me?'text-lime-200':'text-cyan-200'}">${safeText(name)}</p><p class="mt-1 text-white/90">${safeText(text)}</p></div>`;chat.appendChild(el);chat.scrollTop=chat.scrollHeight;}
+seed.forEach(([name,text])=>waMsg(name,text));
+function waQuick(t){$('#waInput').value=t;sendWA();}
+function sendWA(){const input=$('#waInput');const query=input.value.trim();if(!query)return;input.value='';waMsg('You (demo)',query,true);const q=query.toLowerCase();let reply='Try the topic buttons for morphology, project, Chinese biography and notebooks. This is a simple offline example.';if(q.includes('morph'))reply='Morphology studies word structure: roots, affixes and inflection. This affects stemming and segmentation.';else if(q.includes('project')||q.includes('deep')||q.includes('audio'))reply='DeepShield AI: log-Mel spectrogram → EfficientNet-B0; Whisper transcript → spaCy/Sentence-Transformers; fuse available evidence.';else if(q.includes('chinese')||q.includes('biograph'))reply='Chinese biographical analysis is one of the course research activities and earned four stars.';else if(q.includes('notebook')||q.includes('brown')||q.includes('practice'))reply='The notebook section lists Brown Corpus, Practice Doc 1, and Practice Doc 2. Actual notebook files need to be attached separately.';waMsg('Study Guide • simulated',reply);}
+// Correct notebook names, no invented notebook cells, metrics, outputs or execution.
+const notebooks=[
+{id:'brown',title:'Brown Corpus',label:'brown-corpus.ipynb',desc:'Corpus exploration notebook: the Brown Corpus study activity.',tags:['Brown Corpus','Corpus NLP'],icon:'📚'},
+{id:'practice1',title:'Practice Doc 1',label:'practice-doc-1.ipynb',desc:'NLP classroom practice notebook — original exercise content can be attached.',tags:['Jupyter','Practice'],icon:'💻'},
+{id:'practice2',title:'Practice Doc 2',label:'practice-doc-2.ipynb',desc:'Second NLP practice notebook — awaiting the original notebook file.',tags:['Jupyter','Practice'],icon:'🧪'}];
+const detailData={
+'nb-brown':{title:'Brown Corpus',meta:'Notebook 1 of 3',body:'This notebook is listed as part of the NLP classwork. The original .ipynb file has not been provided; add notebooks/brown-corpus.ipynb to the deployed project to enable a public download.'},
+'nb-practice1':{title:'Practice Doc 1',meta:'Notebook 2 of 3',body:'Practice Doc 1 is recorded here as coursework. Its code and outputs were not attached, so this page intentionally does not invent them.'},
+'nb-practice2':{title:'Practice Doc 2',meta:'Notebook 3 of 3',body:'Practice Doc 2 is recorded here as coursework. Add the actual notebook file to the project when it becomes available.'},
+'assign-embeddings':{title:'Digital Assignment — Word Embeddings',meta:'Vectors • NLP learning notes • Tamil language focus',body:'Investigate how embeddings represent words numerically and enable NLP tasks. Consider how embeddings are learned, similarity comparisons, and applications to Indian regional languages, including Tamil.'},
+'assign-tamil':{title:'Tamil Poem & Proverbs',meta:'Language Activity • Desk 05 • Rating 5/5',body:'Translate a poem by Bharathiyar, and share brief motivational Tamil proverbs with translations, interpretations and a personal reflection. Original submission text was not included.'},
+'assign-chinese':{title:'Chinese Biographical Research',meta:'Assignment 1 • Research',body:'Research a Chinese biographical subject, examine sources and language context, and present the biographical analysis. The chosen person and completed document were not supplied.'},
+'case-startup':{title:'NLP Startup: Industry Case Study',meta:'Case Study 1 • Research assignment',body:'Select an Indian or international NLP startup with annual revenue above ₹5 crore. Investigate its origin, founders, products and services, customers, innovation and tools. Verify the revenue threshold with credible evidence before naming a company.'},
+'case-lab':{title:'NLP Lab in a European University',meta:'Case Study 2 • Research assignment',body:'Choose a research lab at a European university. Identify its strengths, research problems, scientists, publications and likely applications or research outcomes. Attach source links and papers when selected.'},
+'case-embeddings':{title:'Embeddings: From Baselines to Indian Languages',meta:'Case Study 3 • Research assignment',body:'Explain how word embeddings are built; compare baselines such as count vectors, TF-IDF, and distributional embedding approaches; find multilingual or Indian regional-language embedding models and demonstrate a few tasks with genuine examples.'}};
+function renderNB(){$('#nbGrid').innerHTML=notebooks.map(n=>`<article class="bg-white/5 border border-white/10 rounded-2xl p-6 card-hover flex flex-col"><div class="flex items-center justify-between"><span class="text-4xl">${n.icon}</span><span class="text-xs text-orange-300 font-mono">.ipynb</span></div><h3 class="font-display font-bold text-xl mt-4">${n.title}</h3><p class="text-sm text-slate-400 mt-3 flex-1">${n.desc}</p><div class="flex gap-2 flex-wrap mt-4">${n.tags.map(t=>`<span class="text-xs bg-white/10 px-3 py-1 rounded-full">${t}</span>`).join('')}</div><button onclick="openNB('${n.id}')" class="bg-white text-black rounded-xl font-bold text-sm py-3 mt-5 hover:bg-orange-200">View notebook details →</button></article>`).join('');}
+renderNB();
+function openDetail(key){const d=detailData[key];if(!d)return;$('#nbTitle').textContent=d.title;$('#nbMeta').textContent=d.meta;$('#nbBody').innerHTML=`<div class="bg-white/5 rounded-2xl border border-white/10 p-5"><p class="text-slate-200 leading-relaxed">${safeText(d.body)}</p></div><p class="text-xs text-slate-500 mt-4">Portfolio details only. Full submissions or notebook files have not been supplied.</p>`;$('#nbModal').classList.remove('hidden');}
+let activeNotebook='';
+const notebookSamples={
+  brown:{code:"# Example code only — not the uploaded notebook\nimport nltk\nfrom nltk.corpus import brown\nnltk.download('brown')\nwords = brown.words(categories='news')\nprint('Number of words:', len(words))",input:'The scientist studies language. Language connects people.'},
+  practice1:{code:"# Example exercise only — original file not supplied\ntext = 'Tamil and English are both languages.'\ntokens = text.lower().split()\nprint(tokens)",input:'Tamil and English are both languages.'},
+  practice2:{code:"# Example exercise only — original file not supplied\nfrom collections import Counter\ntext = 'NLP helps us learn from language language'\nprint(Counter(text.lower().split()))",input:'NLP helps us learn from language language'}
+};
+async function openNB(id){
+  activeNotebook=id;openDetail('nb-'+id);
+  const demo=notebookSamples[id],item=notebooks.find(n=>n.id===id);
+  $('#runBtn').classList.remove('hidden');
+  if(demo){
+    const content=document.createElement('div');content.className='space-y-4 mt-5';
+    content.innerHTML=`<div class="text-xs text-amber-300 bg-amber-400/10 border border-amber-400/30 rounded-xl p-3">Illustrative code sample and a real browser text-analysis demo. This is <b>not</b> the original Jupyter notebook, and the browser does not execute Python.</div>
+      <div class="code-block p-4 notebook-cell"><div class="font-mono text-xs text-cyan-300 mb-2">In [ ]: Example Python cell</div><pre class="text-xs sm:text-sm text-lime-200 whitespace-pre-wrap overflow-x-auto">${safeText(demo.code)}</pre></div>
+      <label class="block text-xs text-slate-300 font-bold">Try browser text analysis</label><textarea id="demoText" rows="2" class="w-full bg-black/40 border border-white/20 rounded-xl p-3 text-sm">${safeText(demo.input)}</textarea>
+      <div id="demoResult" class="text-sm bg-black/20 border border-white/10 rounded-xl p-4 text-slate-400">Press Run example to calculate token frequency from the sample text.</div>`;
+    $('#nbBody').appendChild(content);
+  }
+  if(!item)return;
+  const path='notebooks/'+item.label;
+  try{
+    const response=await fetch(path,{method:'GET',cache:'no-cache'});
+    if(response.ok&&response.headers.get('content-type')?.includes('json')){
+      const data=await response.json();if(data&&data.nbformat){const link=document.createElement('a');link.href=path;link.download=item.label;link.className='inline-flex bg-orange-400 text-black font-bold rounded-xl px-5 py-3 mt-4';link.textContent='Download the uploaded notebook (.ipynb)';$('#nbBody').appendChild(link);}
+    }
+  }catch(e){}
+}
+function runNotebookDemo(){
+  const input=$('#demoText'),result=$('#demoResult');if(!input||!result)return;
+  const tokens=input.value.toLocaleLowerCase().match(/[\p{L}\p{N}]+/gu)||[];
+  const counts=new Map();tokens.forEach(t=>counts.set(t,(counts.get(t)||0)+1));
+  const most=[...counts.entries()].sort((a,b)=>b[1]-a[1]).slice(0,6);
+  result.innerHTML=`<p class="font-bold text-cyan-300 mb-2">Browser output (calculated now)</p><p>Tokens: <b>${tokens.length}</b> • Unique tokens: <b>${counts.size}</b></p><p class="mt-2 text-xs text-slate-400">Top words: ${most.length?most.map(([w,c])=>safeText(w)+' ('+c+')').join(', '):'No tokens found'}</p>`;
+}
+
+
+const caseContent={
+ overview:{title:'How NLP Evolved',sub:'Three lenses on the field',body:'Explore the business ecosystem, active European university research, and how numerical language representations evolved from sparse baselines to learned embeddings. These are the research prompts for the course study.'},
+ startup:{title:'NLP Startup — Industry',sub:'Revenue threshold: ₹5 crore+ per year',body:'Document the company origin and founders; verify revenue using a reliable report; map products, services, customers, tools and innovations. The completed company analysis can be linked when provided.'},
+ lab:{title:'European University NLP Laboratory',sub:'People • Problems • Publications',body:'Select an NLP lab in a European university. Identify research strengths, research questions, scientists, papers and potential applications. Add verified paper links from the university.'},
+ embeddings:{title:'Word Embeddings and Indian Languages',sub:'Count vectors → TF-IDF → learned embeddings',body:'Study how embeddings are trained, compare baselines and investigate multilingual/Indic word representations. Show practical similarity, search, translation or categorization examples for Indian regional languages, including Tamil.'}
+};
+function caseTab(key,btn){
+ $$('.tab-btn').forEach(el=>{el.classList.remove('active');el.setAttribute('aria-selected','false');});
+ btn.classList.add('active');btn.setAttribute('aria-selected','true');
+ const item=caseContent[key];
+ $('#caseContent').innerHTML=`<p class="font-mono text-xs text-cyan-300">${safeText(item.sub)}</p><h3 class="font-display font-bold text-xl sm:text-2xl mt-2">${safeText(item.title)}</h3><p class="text-slate-300 text-sm leading-relaxed mt-3">${safeText(item.body)}</p>`;
+}
+const initialCase=$('.tab-btn.active');if(initialCase)caseTab('overview',initialCase);
+function celebrateStars(){celebrate();boySay('Ten course stars: four for LLM Translation, four for Chinese Biographical Analysis and two for Project Review Q&A.');}
+
+function openAssignment(id){openDetail('assign-'+id);}
+function openCase(id){openDetail('case-'+id);}
+function updateFusion(){const selected=$$('.fusion-input').filter(x=>x.checked).map(x=>x.value);const acoustic=selected.includes('acoustic'),linguistic=selected.includes('linguistic'),speaker=selected.includes('speaker');let text;if(!acoustic&&!linguistic)text='No usable acoustic or transcript evidence is selected: a detection decision cannot be supported.';else if(acoustic&&linguistic)text='Acoustic and linguistic evidence can be considered together in the fusion layer.';else if(acoustic)text='Acoustic evidence is available. Transcript-based verification is absent; report this limitation.';else text='Linguistic evidence is available. Acoustic classification is absent; report this limitation.';if(speaker)text+=' A supplied speaker reference permits an optional consistency check.';$('#fusionResult').textContent=text;}
+updateFusion();
+// User-selected photo preview is browser-local; public photo lives at assets/profile.jpg.
+const embeddedPhotoFallback='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgNDAwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzIyRDNFRSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzhCNUNGNiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIiByeD0iMjAwIiBmaWxsPSIjMTAxNjM0Ii8+PGNpcmNsZSBjeD0iMjAwIiBjeT0iMjAwIiByPSIxODAiIHN0cm9rZT0idXJsKCNnKSIgc3Ryb2tlLXdpZHRoPSIxMCIgZmlsbD0iIzE3MjE0YSIvPjxjaXJjbGUgY3g9IjIwMCIgY3k9IjE1NCIgcj0iNjgiIGZpbGw9IiM3Njg2YjkiLz48cGF0aCBkPSJNNzUgMzMyYzgtODYgNTktMTI3IDEyNS0xMjdzMTE3IDQxIDEyNSAxMjciIGZpbGw9IiM3Njg2YjkiLz48dGV4dCB4PSIyMDAiIHk9IjM3NCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIyMCIgZm9udC1mYW1pbHk9IkFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSJib2xkIiBsZXR0ZXItc3BhY2luZz0iNSIgZmlsbD0iI0UyRThGMCI+QUREIFBIT1RPPC90ZXh0Pjwvc3ZnPg==';const publicPhoto='assets/profile.jpg';const profile=$('#profilePhoto');let hasLocalPhoto=false;
+try{const prior=localStorage.getItem('sridhar-profile-preview');if(prior){profile.src=prior;hasLocalPhoto=true;}}catch(e){}
+const test=new Image();test.onload=()=>{if(!hasLocalPhoto)profile.src=publicPhoto;};test.onerror=()=>{if(!hasLocalPhoto)profile.src=embeddedPhotoFallback;};test.src=publicPhoto;
+$('#photoInput').addEventListener('change',e=>{const file=e.target.files&&e.target.files[0];if(!file)return;if(!file.type.startsWith('image/')){alert('Select an image file.');return;}if(file.size>2*1024*1024){alert('Please use a photo smaller than 2 MB for browser preview.');return;}const reader=new FileReader();reader.onload=ev=>{hasLocalPhoto=true;profile.src=ev.target.result;try{localStorage.setItem('sridhar-profile-preview',ev.target.result);}catch(e){}boySay('Photo preview updated in this browser. To publish it on Vercel, add it to assets/profile.jpg in the project and redeploy.');};reader.readAsDataURL(file);});
+// Editing is preview-only and does not silently change the deployed site.
+function toggleEditMode(){editing=!editing;document.body.classList.toggle('editing',editing);$$('[data-edit]').forEach(el=>el.contentEditable=editing);$('#editBtn').innerHTML=editing?'<i class="fa-solid fa-check"></i> DONE EDITING':'<i class="fa-solid fa-pen"></i> PREVIEW EDIT';if(editing)boySay('Editable text is a browser preview. To publish a change, edit index.html and redeploy your Vercel site.');}
+function openAddModal(type){$('#addModal').classList.remove('hidden');$('#addTitle').textContent='Local note — '+type;$('#addModal').dataset.type=type;}
+function submitAdd(){const title=$('#addField1').value.trim(),body=$('#addField2').value.trim(),kind=$('#addModal').dataset.type;if(!title||!body){alert('Add a title and description.');return;}const note=document.createElement('div');note.className='bg-cyan-400/10 border border-cyan-400/30 rounded-xl p-4 mt-3';note.textContent=title+' — '+body;if(kind==='interaction')$('#timelineList').prepend(note);else if(kind==='question')$('#qaGrid').prepend(note);else $('#nbGrid').prepend(note);$('#addModal').classList.add('hidden');$('#addField1').value='';$('#addField2').value='';$('#addField3').value='';boySay('Added in this browser session only; edit the source to publish this note.');}
+function toggleFontSize(){document.documentElement.classList.toggle('large-text');}
+function toggleContrast(){document.documentElement.classList.toggle('high-contrast');}
+function toggleMotion(){document.body.classList.toggle('reduce-motion');}
+function copyLink(){const text='Upload the self-contained index.html to your GitHub repository root, commit the change, and import the repository at https://vercel.com/new. Optionally add the public photo at assets/profile.jpg and your real notebooks in notebooks/.';if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(text).then(()=>boySay('Deployment guide copied.')).catch(()=>boySay(text));else boySay(text);}
+function downloadPortfolio(){const blob=new Blob([document.documentElement.outerHTML],{type:'text/html;charset=utf-8'});const url=URL.createObjectURL(blob);const link=document.createElement('a');link.href=url;link.download='index.html';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);boySay('Self-contained HTML exported. To update the public site, upload this file to GitHub and commit it.');}
+$$('#mobileMenu a').forEach(link=>link.addEventListener('click',()=>$('#mobileMenu').classList.add('hidden')));
+document.addEventListener('keydown',event=>{if(event.key==='Escape'){$('#nbModal').classList.add('hidden');$('#addModal').classList.add('hidden');if(touring)endTour();}});
+
+</script>
+<noscript><div style="position:fixed;top:0;left:0;right:0;background:#111a38;color:white;padding:12px;text-align:center;z-index:200">Enable JavaScript for the interactive portfolio; the page contents remain available below.</div></noscript>
+</body>
+</html>
